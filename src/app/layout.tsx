@@ -22,11 +22,18 @@ export const metadata: Metadata = {
     "Shop slimme padel accessoires en starter kits in Nederland. Veilig betalen met iDEAL | Wero, kaart, Apple Pay en Google Pay.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"),
   openGraph: {
-    title: "Padel accessoires kopen in Nederland | PaddleForge",
+    title: "PaddleForge — Padel Gear",
     description:
-      "Shop slimme padel accessoires en starter kits in Nederland. Veilig betalen met iDEAL | Wero, kaart, Apple Pay en Google Pay.",
+      "Shop slimme padel accessoires en starter kits in Nederland. Veilig betalen met iDEAL, kaart, Apple Pay en Google Pay.",
     locale: "nl_NL",
     type: "website",
+    images: ["/images/products/carbon-paddle-set.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PaddleForge — Padel Gear",
+    description: "Shop slimme padel accessoires en starter kits in Nederland.",
+    images: ["/images/products/carbon-paddle-set.jpg"],
   },
 };
 
@@ -39,6 +46,13 @@ export default function RootLayout({
     <html lang="nl" className={`${spaceGrotesk.variable} ${manrope.variable} h-full`}>
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2XX2WMTVT" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-D2XX2WMTVT');`,
+          }}
+        />
       </head>
       <body className="bg-surface font-body text-on-surface antialiased overflow-x-hidden min-h-full flex flex-col">
         <CartProvider>

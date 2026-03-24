@@ -103,11 +103,9 @@ export default function ShopPage() {
         </aside>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-24">
-          {products.map((product, index) => (
-            <div key={product.id} className={index % 2 === 1 ? "lg:mt-24" : ""}>
-              <ProductCard product={product} />
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       </div>

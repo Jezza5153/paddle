@@ -67,6 +67,10 @@ export default function CartPage() {
 
   return (
     <main className="pt-32 pb-24 px-8 max-w-screen-md mx-auto min-h-screen">
+      <Link href="/shop" className="inline-flex items-center gap-2 text-zinc-400 hover:text-primary transition-colors mb-6 group">
+        <span className="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform">arrow_back</span>
+        <span className="font-label text-sm tracking-wide">Verder winkelen</span>
+      </Link>
       <div className="bg-inverse-surface rounded-2xl shadow-2xl flex flex-col border border-border/30 overflow-hidden">
         {/* Header */}
         <div className="p-8 flex items-center justify-between border-b border-border/50">
