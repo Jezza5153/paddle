@@ -1,25 +1,30 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, Manrope } from "next/font/google";
 import "./globals.css";
 import { AnnouncementBar } from "@/components/layout/announcement-bar";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { CartProvider } from "@/lib/cart-context";
 
-const inter = Inter({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-headline",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
-  title: "Pickleball accessoires kopen in Nederland | CourtStart NL",
+  title: "Padel accessoires kopen in Nederland | PaddleForge",
   description:
-    "Shop slimme pickleball accessoires en starter kits in Nederland. Veilig betalen met iDEAL | Wero, kaart, Apple Pay en Google Pay.",
+    "Shop slimme padel accessoires en starter kits in Nederland. Veilig betalen met iDEAL | Wero, kaart, Apple Pay en Google Pay.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"),
   openGraph: {
-    title: "Pickleball accessoires kopen in Nederland | CourtStart NL",
+    title: "Padel accessoires kopen in Nederland | PaddleForge",
     description:
-      "Shop slimme pickleball accessoires en starter kits in Nederland. Veilig betalen met iDEAL | Wero, kaart, Apple Pay en Google Pay.",
+      "Shop slimme padel accessoires en starter kits in Nederland. Veilig betalen met iDEAL | Wero, kaart, Apple Pay en Google Pay.",
     locale: "nl_NL",
     type: "website",
   },
@@ -31,8 +36,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={`${inter.variable} h-full`}>
-      <body className="min-h-full flex flex-col antialiased">
+    <html lang="nl" className={`${spaceGrotesk.variable} ${manrope.variable} h-full`}>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+      </head>
+      <body className="bg-surface font-body text-on-surface antialiased overflow-x-hidden min-h-full flex flex-col">
         <CartProvider>
           <AnnouncementBar />
           <Header />
@@ -46,10 +54,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "CourtStart NL",
+              name: "PaddleForge",
               url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
               description:
-                "Slimme pickleball accessoires en starter kits in Nederland.",
+                "Slimme padel accessoires en starter kits in Nederland.",
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "NL",

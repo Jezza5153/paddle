@@ -192,7 +192,7 @@ async function handleCheckoutComplete(
         shippingAddress: shipping?.address?.line1 || "",
         shippingCustomerName: shipping?.name || "",
         shippingPhone: "",
-        remark: `CourtStart order ${orderNumber}`,
+        remark: `PaddleForge order ${orderNumber}`,
         products: cjProducts,
       });
 

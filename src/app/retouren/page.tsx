@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { RotateCcw } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Retouren | CourtStart NL",
-  description: "Retourbeleid van CourtStart NL. 14 dagen bedenktijd.",
+  title: "Retouren | PaddleForge",
+  description: "Retourbeleid van PaddleForge. 14 dagen bedenktijd.",
 };
 
 export default function RetourenPage() {
@@ -32,7 +32,7 @@ export default function RetourenPage() {
 
             <h2 className="text-lg font-semibold text-text-primary mt-8">Hoe werkt het?</h2>
             <ol className="list-decimal pl-6 space-y-2">
-              <li>Stuur een e-mail naar <a href="mailto:info@courtstart.nl" className="text-brand-green hover:underline">info@courtstart.nl</a> met je bestelnummer</li>
+              <li>Stuur een e-mail naar <a href="mailto:info@paddleforge.nl" className="text-brand-green hover:underline">info@paddleforge.nl</a> met je bestelnummer</li>
               <li>We sturen je de retourinstructies</li>
               <li>Stuur het product terug</li>
               <li>Na ontvangst en controle wordt het bedrag teruggestort</li>
@@ -45,8 +45,8 @@ export default function RetourenPage() {
 
             <p className="text-sm text-muted-foreground mt-8">
               Vragen? Mail ons op{" "}
-              <a href="mailto:info@courtstart.nl" className="text-brand-green hover:underline">
-                info@courtstart.nl
+              <a href="mailto:info@paddleforge.nl" className="text-brand-green hover:underline">
+                info@paddleforge.nl
               </a>
             </p>
           </div>

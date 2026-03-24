@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacybeleid | CourtStart NL",
-  description: "Privacybeleid van CourtStart NL.",
+  title: "Privacybeleid | PaddleForge",
+  description: "Privacybeleid van PaddleForge.",
 };
 
 export default function PrivacyPage() {
@@ -21,7 +21,7 @@ export default function PrivacyPage() {
           <div className="prose prose-gray max-w-none space-y-6 text-text-secondary leading-7">
             <p><em>Laatst bijgewerkt: maart 2026</em></p>
 
-            <p>CourtStart NL respecteert de privacy van alle gebruikers van de website en zorgt ervoor dat persoonlijke informatie vertrouwelijk wordt behandeld.</p>
+            <p>PaddleForge respecteert de privacy van alle gebruikers van de website en zorgt ervoor dat persoonlijke informatie vertrouwelijk wordt behandeld.</p>
 
             <h2 className="text-lg font-semibold text-text-primary mt-8">Welke gegevens verzamelen we?</h2>
             <ul className="list-disc pl-6 space-y-2">
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
             <p>We nemen passende technische en organisatorische maatregelen om je gegevens te beschermen tegen ongeoorloofde toegang of verlies.</p>
 
             <h2 className="text-lg font-semibold text-text-primary mt-8">Je rechten</h2>
-            <p>Je hebt het recht om je persoonsgegevens in te zien, te corrigeren of te laten verwijderen. Neem hiervoor contact met ons op via <a href="mailto:info@courtstart.nl" className="text-brand-green hover:underline">info@courtstart.nl</a>.</p>
+            <p>Je hebt het recht om je persoonsgegevens in te zien, te corrigeren of te laten verwijderen. Neem hiervoor contact met ons op via <a href="mailto:info@paddleforge.nl" className="text-brand-green hover:underline">info@paddleforge.nl</a>.</p>
 
             <h2 className="text-lg font-semibold text-text-primary mt-8">Cookies</h2>
             <p>We gebruiken alleen functionele cookies die nodig zijn voor het functioneren van de webshop (zoals je winkelmand). We gebruiken geen tracking cookies.</p>

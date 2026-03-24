@@ -1,106 +1,65 @@
 import Link from "next/link";
 
-const footerLinks = {
-  shop: [
-    { href: "/shop", label: "Alle producten" },
-    { href: "/products/driveway-court-kit", label: "Driveway Court Kit" },
-    { href: "/products/paddle-grip-refresh-kit", label: "Paddle Grip Refresh Kit" },
-    { href: "/products/paddle-armor-kit", label: "Paddle Armor Kit" },
-  ],
-  info: [
-    { href: "/verzending", label: "Verzending" },
-    { href: "/retouren", label: "Retouren" },
-    { href: "/contact", label: "Contact" },
-  ],
-  legal: [
-    { href: "/privacy", label: "Privacybeleid" },
-    { href: "/algemene-voorwaarden", label: "Algemene voorwaarden" },
-  ],
-};
-
 export function Footer() {
   return (
-    <footer className="bg-white border-t border-border mt-auto">
-      <div className="page-width section-padding">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="text-lg font-semibold tracking-tight text-text-primary">
-              CourtStart <span className="text-brand-green">NL</span>
-            </Link>
-            <p className="mt-3 text-sm text-text-secondary leading-6">
-              Slim starten met pickleball.
-            </p>
-            <p className="mt-4 text-xs text-muted-foreground">
-              KVK-geregistreerd bedrijf
-            </p>
+    <footer className="bg-inverse-surface w-full py-20 px-10">
+      <div className="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-end w-full">
+        <div className="space-y-8">
+          <div className="text-4xl sm:text-5xl font-black text-surface opacity-10 font-headline italic tracking-tighter">
+            PADDLEFORGE
           </div>
-
-          {/* Shop */}
-          <div>
-            <h3 className="text-sm font-semibold text-text-primary mb-4">Shop</h3>
-            <ul className="space-y-3">
-              {footerLinks.shop.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-text-secondary hover:text-text-primary transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Info */}
-          <div>
-            <h3 className="text-sm font-semibold text-text-primary mb-4">Klantenservice</h3>
-            <ul className="space-y-3">
-              {footerLinks.info.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-text-secondary hover:text-text-primary transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <h3 className="text-sm font-semibold text-text-primary mb-4">Juridisch</h3>
-            <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-text-secondary hover:text-text-primary transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="flex gap-6">
+            <a className="text-on-surface-variant hover:text-primary transition-colors" href="#">
+              <span className="material-symbols-outlined text-3xl" data-icon="public">
+                public
+              </span>
+            </a>
+            <a className="text-on-surface-variant hover:text-primary transition-colors" href="#">
+              <span className="material-symbols-outlined text-3xl" data-icon="podcasts">
+                podcasts
+              </span>
+            </a>
+            <a className="text-on-surface-variant hover:text-primary transition-colors" href="#">
+              <span className="material-symbols-outlined text-3xl" data-icon="play_circle">
+                play_circle
+              </span>
+            </a>
           </div>
         </div>
-
-        {/* Bottom */}
-        <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} CourtStart NL. Alle rechten voorbehouden.
+        
+        <div className="flex flex-wrap gap-8 justify-center md:justify-start">
+          <Link
+            href="/privacy"
+            className="font-label uppercase tracking-widest text-[10px] text-on-surface-variant hover:text-surface transition-colors hover:underline decoration-primary underline-offset-8"
+          >
+            Privacy
+          </Link>
+          <Link
+            href="/algemene-voorwaarden"
+            className="font-label uppercase tracking-widest text-[10px] text-on-surface-variant hover:text-surface transition-colors hover:underline decoration-primary underline-offset-8"
+          >
+            Algemene Voorwaarden
+          </Link>
+          <Link
+            href="/verzending"
+            className="font-label uppercase tracking-widest text-[10px] text-on-surface-variant hover:text-surface transition-colors hover:underline decoration-primary underline-offset-8"
+          >
+            Verzending
+          </Link>
+          <Link
+            href="/contact"
+            className="font-label uppercase tracking-widest text-[10px] text-on-surface-variant hover:text-surface transition-colors hover:underline decoration-primary underline-offset-8"
+          >
+            Contact
+          </Link>
+        </div>
+        
+        <div className="text-left md:text-right">
+          <p className="font-label uppercase tracking-widest text-[10px] text-on-surface-variant">
+            © {new Date().getFullYear()} PADDLEFORGE KINETIC PRECISION. ALLE RECHTEN VOORBEHOUDEN.
           </p>
-          <div className="flex items-center gap-4 text-xs text-muted-foreground">
-            <span>iDEAL</span>
-            <span>•</span>
-            <span>Visa / Mastercard</span>
-            <span>•</span>
-            <span>Apple Pay</span>
-            <span>•</span>
-            <span>Google Pay</span>
+          <div className="mt-4 text-primary font-headline font-bold text-xs tracking-[0.3em]">
+            GEBOREN OP DE BAAN.
           </div>
         </div>
       </div>

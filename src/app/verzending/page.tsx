@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Truck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Verzending | CourtStart NL",
-  description: "Informatie over verzending en levertijden bij CourtStart NL.",
+  title: "Verzending | PaddleForge",
+  description: "Informatie over verzending en levertijden bij PaddleForge.",
 };
 
 export default function VerzendingPage() {
@@ -20,7 +20,7 @@ export default function VerzendingPage() {
 
           <div className="prose prose-gray max-w-none space-y-6 text-text-secondary leading-7">
             <p>
-              Bij CourtStart NL vinden we het belangrijk dat je precies weet waar je aan toe bent. Daarom tonen we bij elk product een realistische levertijd.
+              Bij PaddleForge vinden we het belangrijk dat je precies weet waar je aan toe bent. Daarom tonen we bij elk product een realistische levertijd.
             </p>
 
             <h2 className="text-lg font-semibold text-text-primary mt-8">Levertijd</h2>
@@ -45,8 +45,8 @@ export default function VerzendingPage() {
 
             <p className="text-sm text-muted-foreground mt-8">
               Vragen over verzending? Mail ons op{" "}
-              <a href="mailto:info@courtstart.nl" className="text-brand-green hover:underline">
-                info@courtstart.nl
+              <a href="mailto:info@paddleforge.nl" className="text-brand-green hover:underline">
+                info@paddleforge.nl
               </a>
             </p>
           </div>

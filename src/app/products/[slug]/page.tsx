@@ -2,16 +2,13 @@ import { notFound } from "next/navigation";
 import { getProductBySlug, getAllProducts } from "@/data/products";
 import { ProductGallery } from "@/components/product/product-gallery";
 import { ProductSummary } from "@/components/product/product-summary";
-import { ProductTabs } from "@/components/product/product-tabs";
-import { CrossSell } from "@/components/product/cross-sell";
-import { Shield, Truck, RotateCcw } from "lucide-react";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Allow dynamic rendering for product pages so new products work immediately
 export const dynamicParams = true;
 export const dynamic = "force-dynamic";
 
@@ -27,10 +24,10 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   if (!product) return {};
 
   return {
-    title: `${product.name} | CourtStart NL`,
+    title: `${product.name} | PaddleForge`,
     description: product.shortDescription,
     openGraph: {
-      title: `${product.name} | CourtStart NL`,
+      title: `${product.name} | PaddleForge`,
       description: product.shortDescription,
       images: [product.primaryImage],
     },
@@ -94,63 +91,39 @@ export default async function ProductPage({ params }: ProductPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <div className="section-padding">
-        <div className="page-width">
-          {/* Breadcrumb */}
-          <nav className="mb-8 text-sm text-muted-foreground">
-            <a href="/" className="hover:text-text-primary transition-colors">Home</a>
-            <span className="mx-2">/</span>
-            <a href="/shop" className="hover:text-text-primary transition-colors">Shop</a>
-            <span className="mx-2">/</span>
-            <span className="text-text-primary">{product.name}</span>
-          </nav>
-
-          {/* Product grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
-            <ProductGallery images={product.galleryImages} alt={product.name} />
+      <div className="pt-32 pb-24 max-w-screen-2xl mx-auto px-8 min-h-screen">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          <div className="lg:col-span-7">
+            <ProductGallery images={product.galleryImages} alt={product.name} badge={product.badge} />
+          </div>
+          <div className="lg:col-span-5">
             <ProductSummary product={product} />
           </div>
+        </div>
 
-          {/* Tabs */}
-          <div className="mt-16 max-w-2xl">
-            <ProductTabs product={product} />
-          </div>
-
-          {/* Cross-sell */}
-          <CrossSell currentSlug={product.slug} />
-
-          {/* Final reassurance */}
-          <div className="mt-16 bg-surface rounded-2xl border border-border p-8">
-            <h3 className="text-lg font-semibold text-text-primary mb-4">
-              Waarom CourtStart?
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              <div className="flex items-start gap-3">
-                <Shield className="h-5 w-5 text-brand-green mt-0.5" />
-                <div>
-                  <p className="text-sm font-medium text-text-primary">Veilig betalen</p>
-                  <p className="text-xs text-muted-foreground mt-1">
-                    iDEAL, Wero, kaart, Apple Pay en Google Pay
-                  </p>
-                </div>
+        {/* Featured Section (Bento Style) */}
+        <div className="mt-32">
+          <h2 className="font-headline text-3xl font-black mb-12 uppercase tracking-tighter">
+            Engineered for <span className="text-primary italic">Impact</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="md:col-span-2 bg-surface-container-low p-12 rounded-xl flex flex-col justify-end min-h-[400px] relative overflow-hidden group">
+              <Image 
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWcrUr-9OBtFGpx147rt7u-T2jnZMwAL-xG4euZDdO7m9DzEl0jAm0vJg1JshreBnMfjm3uZVCkWR-CTizFWKhQXVRzPiDNprkRkvTINBkrpiIvEojobeVMin9_CXDH13pa1fqQRvn_naBIh11OUw1O49BTTPSIrLR7F8wn_fCDupW-j27CZMUkPdrOLjAYrHPWDOiZxvaFxQcRoCGwOICFmy_yC9qL1NNHint57VHiF-KejmRA19acpYv1XEvlMG8VgCwp4-hB1k"
+                alt="Dynamic action shot"
+                fill
+                className="object-cover opacity-40 group-hover:scale-110 transition-transform duration-1000"
+              />
+              <div className="relative z-10 text-on-surface">
+                <h3 className="font-headline text-4xl font-bold mb-4 tracking-tighter leading-none uppercase">Vibratie Reductie</h3>
+                <p className="max-w-sm">Ons interne vloeistof-balans systeem dempt schadelijke trillingen direct bij impact voor optimaal comfort tijdens het padellen.</p>
               </div>
-              <div className="flex items-start gap-3">
-                <Truck className="h-5 w-5 text-brand-green mt-0.5" />
-                <div>
-                  <p className="text-sm font-medium text-text-primary">Duidelijke levering</p>
-                  <p className="text-xs text-muted-foreground mt-1">
-                    Realistische levertijd bij elk product
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <RotateCcw className="h-5 w-5 text-brand-green mt-0.5" />
-                <div>
-                  <p className="text-sm font-medium text-text-primary">14 dagen retour</p>
-                  <p className="text-xs text-muted-foreground mt-1">
-                    Niet tevreden? Stuur het terug
-                  </p>
-                </div>
+            </div>
+            <div className="bg-primary p-10 rounded-xl flex flex-col justify-between text-on-primary">
+              <span className="material-symbols-outlined text-5xl" data-icon="bolt">bolt</span>
+              <div>
+                <h3 className="font-headline text-2xl font-black mb-2 leading-tight uppercase">Maximale Kracht</h3>
+                <p className="text-on-primary/80 text-sm">De versterkte carbon-laag genereert 15% meer balsnelheid dan standaard padel rackets.</p>
               </div>
             </div>
           </div>

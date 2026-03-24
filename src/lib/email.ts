@@ -13,7 +13,7 @@ interface OrderConfirmationData {
 export async function sendOrderConfirmation(data: OrderConfirmationData) {
   try {
     await resend.emails.send({
-      from: "CourtStart NL <info@courtstart.nl>",
+      from: "PaddleForge <info@paddleforge.nl>",
       to: data.email,
       subject: `Bestelling bevestigd — ${data.orderNumber}`,
       html: `
@@ -68,12 +68,12 @@ export async function sendOrderConfirmation(data: OrderConfirmationData) {
           </ul>
           
           <p style="color: #475467; font-size: 14px; margin-top: 24px;">
-            Vragen? Mail ons op <a href="mailto:info@courtstart.nl" style="color: #0E9F6E;">info@courtstart.nl</a>
+            Vragen? Mail ons op <a href="mailto:info@paddleforge.nl" style="color: #0E9F6E;">info@paddleforge.nl</a>
           </p>
           
           <hr style="border: none; border-top: 1px solid #E4E7EC; margin: 32px 0 16px;" />
           <p style="color: #98A2B3; font-size: 12px;">
-            CourtStart NL — Slim starten met pickleball.
+            PaddleForge — Slim starten met padellen.
           </p>
         </div>
       `,

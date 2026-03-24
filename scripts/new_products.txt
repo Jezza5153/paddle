@@ -1,0 +1,681 @@
+
+  {
+    id: "2603240218081633100",
+    name: "Single-row Tennis Bracelet For Men And Women",
+    slug: "single-row-tennis-bracelet-for-men-and-women-2603",
+    shortDescription: "Single-row Tennis Bracelet For Men And Women",
+    description: "Single-row Tennis Bracelet For Men And Women - High performance padel gear.",
+    basePriceIncVat: 2.3,
+    compareAtPriceIncVat: 3.45,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/single-row-tennis-bracelet-for-men-and-women-2603.jpg",
+    galleryImages: ["/images/products/single-row-tennis-bracelet-for-men-and-women-2603.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2603240218081633100",
+      variantId: "CJSL2801270",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2036327916758671362",
+    name: "American-style Campus-inspired Color-blocked Zippered Pleated Tennis Dress For Women",
+    slug: "american-style-campus-inspired-color-blocked-zippered-pleated-tennis-dress-for-women-2036",
+    shortDescription: "American-style Campus-inspired Color-blocked Zippered Pleated Tennis Dress For Women",
+    description: "American-style Campus-inspired Color-blocked Zippered Pleated Tennis Dress For Women - High performance padel gear.",
+    basePriceIncVat: 5.09,
+    compareAtPriceIncVat: 7.63,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/american-style-campus-inspired-color-blocked-zippered-pleated-tennis-dress-for-women-2036.jpg",
+    galleryImages: ["/images/products/american-style-campus-inspired-color-blocked-zippered-pleated-tennis-dress-for-women-2036.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2036327916758671362",
+      variantId: "CJLY2801783",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2034114064978210817",
+    name: "Tennis Girl Style Checkered Back Contrast Color Sports Short Skirt",
+    slug: "tennis-girl-style-checkered-back-contrast-color-sports-short-skirt-2034",
+    shortDescription: "Tennis Girl Style Checkered Back Contrast Color Sports Short Skirt",
+    description: "Tennis Girl Style Checkered Back Contrast Color Sports Short Skirt - High performance padel gear.",
+    basePriceIncVat: 3.75,
+    compareAtPriceIncVat: 5.63,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/tennis-girl-style-checkered-back-contrast-color-sports-short-skirt-2034.jpg",
+    galleryImages: ["/images/products/tennis-girl-style-checkered-back-contrast-color-sports-short-skirt-2034.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2034114064978210817",
+      variantId: "CJLY2791641",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2603170628441628900",
+    name: "European And American-style Colorful Zircon Single-row Tennis Bracelet Jewelry",
+    slug: "european-and-american-style-colorful-zircon-single-row-tennis-bracelet-jewelry-2603",
+    shortDescription: "European And American-style Colorful Zircon Single-row Tennis Bracelet Jewelry",
+    description: "European And American-style Colorful Zircon Single-row Tennis Bracelet Jewelry - High performance padel gear.",
+    basePriceIncVat: 2.85,
+    compareAtPriceIncVat: 4.28,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/european-and-american-style-colorful-zircon-single-row-tennis-bracelet-jewelry-2603.jpg",
+    galleryImages: ["/images/products/european-and-american-style-colorful-zircon-single-row-tennis-bracelet-jewelry-2603.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2603170628441628900",
+      variantId: "CJSL2789990",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2603170401041626100",
+    name: "European And American Necklace Men's Hip-hop Tennis",
+    slug: "european-and-american-necklace-men-s-hip-hop-tennis-2603",
+    shortDescription: "European And American Necklace Men's Hip-hop Tennis",
+    description: "European And American Necklace Men's Hip-hop Tennis - High performance padel gear.",
+    basePriceIncVat: 3.55,
+    compareAtPriceIncVat: 5.32,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/european-and-american-necklace-men-s-hip-hop-tennis-2603.jpg",
+    galleryImages: ["/images/products/european-and-american-necklace-men-s-hip-hop-tennis-2603.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2603170401041626100",
+      variantId: "CJLX2789737",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2032340690152091649",
+    name: "Pet Ball Food Feeder Dog Feeding Machine Tennis Automatic Rewarder Interactive",
+    slug: "pet-ball-food-feeder-dog-feeding-machine-tennis-automatic-rewarder-interactive-2032",
+    shortDescription: "Pet Ball Food Feeder Dog Feeding Machine Tennis Automatic Rewarder Interactive",
+    description: "Pet Ball Food Feeder Dog Feeding Machine Tennis Automatic Rewarder Interactive - High performance padel gear.",
+    basePriceIncVat: 29.35,
+    compareAtPriceIncVat: 44.03,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/pet-ball-food-feeder-dog-feeding-machine-tennis-automatic-rewarder-interactive-2032.jpg",
+    galleryImages: ["/images/products/pet-ball-food-feeder-dog-feeding-machine-tennis-automatic-rewarder-interactive-2032.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2032340690152091649",
+      variantId: "CJFU2786391",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2032008201040740353",
+    name: "1PC Table Tennis Racket Bags EVA Hard Shell High Quality Dustproof Table Tennis Paddles Box Case Storage Bag With Hand Strap Good",
+    slug: "1pc-table-tennis-racket-bags-eva-hard-shell-high-quality-dustproof-table-tennis-paddles-box-case-storage-bag-with-hand-strap-good-2032",
+    shortDescription: "1PC Table Tennis Racket Bags EVA Hard Shell High Quality Dustproof Table Tennis Paddles Box Case Storage Bag With Hand Strap Good",
+    description: "1PC Table Tennis Racket Bags EVA Hard Shell High Quality Dustproof Table Tennis Paddles Box Case Storage Bag With Hand Strap Good - High performance padel gear.",
+    basePriceIncVat: 13.93,
+    compareAtPriceIncVat: 20.89,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/1pc-table-tennis-racket-bags-eva-hard-shell-high-quality-dustproof-table-tennis-paddles-box-case-storage-bag-with-hand-strap-good-2032.jpg",
+    galleryImages: ["/images/products/1pc-table-tennis-racket-bags-eva-hard-shell-high-quality-dustproof-table-tennis-paddles-box-case-storage-bag-with-hand-strap-good-2032.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2032008201040740353",
+      variantId: "CJSD2785213",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2032008146193903618",
+    name: "1pc Professional Table Tennis Rackets, EVA Hard-Shell Table-Tennis Paddle Case, Table Tennis Paddles Box Case Storage Bag",
+    slug: "1pc-professional-table-tennis-rackets-eva-hard-shell-table-tennis-paddle-case-table-tennis-paddles-box-case-storage-bag-2032",
+    shortDescription: "1pc Professional Table Tennis Rackets, EVA Hard-Shell Table-Tennis Paddle Case, Table Tennis Paddles Box Case Storage Bag",
+    description: "1pc Professional Table Tennis Rackets, EVA Hard-Shell Table-Tennis Paddle Case, Table Tennis Paddles Box Case Storage Bag - High performance padel gear.",
+    basePriceIncVat: 15.43,
+    compareAtPriceIncVat: 23.14,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/1pc-professional-table-tennis-rackets-eva-hard-shell-table-tennis-paddle-case-table-tennis-paddles-box-case-storage-bag-2032.jpg",
+    galleryImages: ["/images/products/1pc-professional-table-tennis-rackets-eva-hard-shell-table-tennis-paddle-case-table-tennis-paddles-box-case-storage-bag-2032.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2032008146193903618",
+      variantId: "CJSD2785211",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2032006984333381633",
+    name: "1pc Table Tennis Racket Bags EVA Hard Shell High Quality Dustproof Table Tennis Paddles Box Case Storage Bag With Hand Strap Good",
+    slug: "1pc-table-tennis-racket-bags-eva-hard-shell-high-quality-dustproof-table-tennis-paddles-box-case-storage-bag-with-hand-strap-good-2032",
+    shortDescription: "1pc Table Tennis Racket Bags EVA Hard Shell High Quality Dustproof Table Tennis Paddles Box Case Storage Bag With Hand Strap Good",
+    description: "1pc Table Tennis Racket Bags EVA Hard Shell High Quality Dustproof Table Tennis Paddles Box Case Storage Bag With Hand Strap Good - High performance padel gear.",
+    basePriceIncVat: 13.93,
+    compareAtPriceIncVat: 20.89,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/1pc-table-tennis-racket-bags-eva-hard-shell-high-quality-dustproof-table-tennis-paddles-box-case-storage-bag-with-hand-strap-good-2032.jpg",
+    galleryImages: ["/images/products/1pc-table-tennis-racket-bags-eva-hard-shell-high-quality-dustproof-table-tennis-paddles-box-case-storage-bag-with-hand-strap-good-2032.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2032006984333381633",
+      variantId: "CJSD2785181",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2032005332757561345",
+    name: "6-Star 7-Ply Genuine Professional Table Tennis Racket, Double Racket, Straight And Penhold Handles, Authentic Carbon Fiber Competition Table Tennis Racket, High Elasticity Set",
+    slug: "6-star-7-ply-genuine-professional-table-tennis-racket-double-racket-straight-and-penhold-handles-authentic-carbon-fiber-competition-table-tennis-racket-high-elasticity-set-2032",
+    shortDescription: "6-Star 7-Ply Genuine Professional Table Tennis Racket, Double Racket, Straight And Penhold Handles, Authentic Carbon Fiber Competition Table Tennis Racket, High Elasticity Set",
+    description: "6-Star 7-Ply Genuine Professional Table Tennis Racket, Double Racket, Straight And Penhold Handles, Authentic Carbon Fiber Competition Table Tennis Racket, High Elasticity Set - High performance padel gear.",
+    basePriceIncVat: 15.22,
+    compareAtPriceIncVat: 22.83,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/6-star-7-ply-genuine-professional-table-tennis-racket-double-racket-straight-and-penhold-handles-authentic-carbon-fiber-competition-table-tennis-racket-high-elasticity-set-2032.jpg",
+    galleryImages: ["/images/products/6-star-7-ply-genuine-professional-table-tennis-racket-double-racket-straight-and-penhold-handles-authentic-carbon-fiber-competition-table-tennis-racket-high-elasticity-set-2032.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2032005332757561345",
+      variantId: "CJSD2785137",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2603100546551611600",
+    name: "Table Tennis Net Stand Portable Free-Standing Heavy-Duty Material",
+    slug: "table-tennis-net-stand-portable-free-standing-heavy-duty-material-2603",
+    shortDescription: "Table Tennis Net Stand Portable Free-Standing Heavy-Duty Material",
+    description: "Table Tennis Net Stand Portable Free-Standing Heavy-Duty Material - High performance padel gear.",
+    basePriceIncVat: 2.41,
+    compareAtPriceIncVat: 3.62,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/table-tennis-net-stand-portable-free-standing-heavy-duty-material-2603.jpg",
+    galleryImages: ["/images/products/table-tennis-net-stand-portable-free-standing-heavy-duty-material-2603.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2603100546551611600",
+      variantId: "CJYD2782230",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2031217378532229121",
+    name: "24K Gold Over Butterfly Design Jewelry, Micro-Inlaid Mossanite Women's Tennis Necklace, Effortless Grace For Her Delicate Neck",
+    slug: "24k-gold-over-butterfly-design-jewelry-micro-inlaid-mossanite-women-s-tennis-necklace-effortless-grace-for-her-delicate-neck-2031",
+    shortDescription: "24K Gold Over Butterfly Design Jewelry, Micro-Inlaid Mossanite Women's Tennis Necklace, Effortless Grace For Her Delicate Neck",
+    description: "24K Gold Over Butterfly Design Jewelry, Micro-Inlaid Mossanite Women's Tennis Necklace, Effortless Grace For Her Delicate Neck - High performance padel gear.",
+    basePriceIncVat: 24.63,
+    compareAtPriceIncVat: 36.95,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/24k-gold-over-butterfly-design-jewelry-micro-inlaid-mossanite-women-s-tennis-necklace-effortless-grace-for-her-delicate-neck-2031.jpg",
+    galleryImages: ["/images/products/24k-gold-over-butterfly-design-jewelry-micro-inlaid-mossanite-women-s-tennis-necklace-effortless-grace-for-her-delicate-neck-2031.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2031217378532229121",
+      variantId: "CJLX2782115",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2603050229151613700",
+    name: "Zircon Tennis Chain Bracelet Ins Luxury Style",
+    slug: "zircon-tennis-chain-bracelet-ins-luxury-style-2603",
+    shortDescription: "Zircon Tennis Chain Bracelet Ins Luxury Style",
+    description: "Zircon Tennis Chain Bracelet Ins Luxury Style - High performance padel gear.",
+    basePriceIncVat: 0.98,
+    compareAtPriceIncVat: 1.47,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/zircon-tennis-chain-bracelet-ins-luxury-style-2603.jpg",
+    galleryImages: ["/images/products/zircon-tennis-chain-bracelet-ins-luxury-style-2603.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2603050229151613700",
+      variantId: "CJSL2775775",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2603040204161625400",
+    name: "Badminton Sports Series Table Tennis Brooch",
+    slug: "badminton-sports-series-table-tennis-brooch-2603",
+    shortDescription: "Badminton Sports Series Table Tennis Brooch",
+    description: "Badminton Sports Series Table Tennis Brooch - High performance padel gear.",
+    basePriceIncVat: 0.61,
+    compareAtPriceIncVat: 0.92,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/badminton-sports-series-table-tennis-brooch-2603.jpg",
+    galleryImages: ["/images/products/badminton-sports-series-table-tennis-brooch-2603.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2603040204161625400",
+      variantId: "CJYD2774006",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2603040139491615700",
+    name: "Customized Stainless Steel Letter Name Zirconium Tennis Bracelet",
+    slug: "customized-stainless-steel-letter-name-zirconium-tennis-bracelet-2603",
+    shortDescription: "Customized Stainless Steel Letter Name Zirconium Tennis Bracelet",
+    description: "Customized Stainless Steel Letter Name Zirconium Tennis Bracelet - High performance padel gear.",
+    basePriceIncVat: 15.15,
+    compareAtPriceIncVat: 22.73,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/customized-stainless-steel-letter-name-zirconium-tennis-bracelet-2603.jpg",
+    galleryImages: ["/images/products/customized-stainless-steel-letter-name-zirconium-tennis-bracelet-2603.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2603040139491615700",
+      variantId: "CJSL2773916",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2603030257411620800",
+    name: "Cage-style Tennis Racket For Children And Adults Paddle Type",
+    slug: "cage-style-tennis-racket-for-children-and-adults-paddle-type-2603",
+    shortDescription: "Cage-style Tennis Racket For Children And Adults Paddle Type",
+    description: "Cage-style Tennis Racket For Children And Adults Paddle Type - High performance padel gear.",
+    basePriceIncVat: 9.95,
+    compareAtPriceIncVat: 14.92,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/cage-style-tennis-racket-for-children-and-adults-paddle-type-2603.jpg",
+    galleryImages: ["/images/products/cage-style-tennis-racket-for-children-and-adults-paddle-type-2603.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2603030257411620800",
+      variantId: "CJYD2772655",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2603020606191608200",
+    name: "Yoga Set Tennis Skirt Anti-Exposure Fake Two-Piece Running Skort",
+    slug: "yoga-set-tennis-skirt-anti-exposure-fake-two-piece-running-skort-2603",
+    shortDescription: "Yoga Set Tennis Skirt Anti-Exposure Fake Two-Piece Running Skort",
+    description: "Yoga Set Tennis Skirt Anti-Exposure Fake Two-Piece Running Skort - High performance padel gear.",
+    basePriceIncVat: 9.32,
+    compareAtPriceIncVat: 13.98,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/yoga-set-tennis-skirt-anti-exposure-fake-two-piece-running-skort-2603.jpg",
+    galleryImages: ["/images/products/yoga-set-tennis-skirt-anti-exposure-fake-two-piece-running-skort-2603.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2603020606191608200",
+      variantId: "CJYD2771867",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2602270632301633500",
+    name: "Badminton Compression Brace Specifically For Tennis Elbow",
+    slug: "badminton-compression-brace-specifically-for-tennis-elbow-2602",
+    shortDescription: "Badminton Compression Brace Specifically For Tennis Elbow",
+    description: "Badminton Compression Brace Specifically For Tennis Elbow - High performance padel gear.",
+    basePriceIncVat: 2.63,
+    compareAtPriceIncVat: 3.94,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/badminton-compression-brace-specifically-for-tennis-elbow-2602.jpg",
+    galleryImages: ["/images/products/badminton-compression-brace-specifically-for-tennis-elbow-2602.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2602270632301633500",
+      variantId: "CJYD2769222",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2602270357271606700",
+    name: "Rainbow-colored Square Tennis Bracelet With Zirconia",
+    slug: "rainbow-colored-square-tennis-bracelet-with-zirconia-2602",
+    shortDescription: "Rainbow-colored Square Tennis Bracelet With Zirconia",
+    description: "Rainbow-colored Square Tennis Bracelet With Zirconia - High performance padel gear.",
+    basePriceIncVat: 6.88,
+    compareAtPriceIncVat: 10.32,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/rainbow-colored-square-tennis-bracelet-with-zirconia-2602.jpg",
+    galleryImages: ["/images/products/rainbow-colored-square-tennis-bracelet-with-zirconia-2602.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2602270357271606700",
+      variantId: "CJSL2768948",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },
+  {
+    id: "2602260135131634300",
+    name: "Pocket Tennis Women's Fake Two-Piece Anti-Exposure Yoga Skirt",
+    slug: "pocket-tennis-women-s-fake-two-piece-anti-exposure-yoga-skirt-2602",
+    shortDescription: "Pocket Tennis Women's Fake Two-Piece Anti-Exposure Yoga Skirt",
+    description: "Pocket Tennis Women's Fake Two-Piece Anti-Exposure Yoga Skirt - High performance padel gear.",
+    basePriceIncVat: 8.71,
+    compareAtPriceIncVat: 13.07,
+    category: "Padel",
+    badge: "NEW",
+    primaryImage: "/images/products/pocket-tennis-women-s-fake-two-piece-anti-exposure-yoga-skirt-2602.jpg",
+    galleryImages: ["/images/products/pocket-tennis-women-s-fake-two-piece-anti-exposure-yoga-skirt-2602.jpg"],
+    bulletPoints: [
+      "Ergonomic handle for maximum grip",
+      "Carbon fiber reinforced structure",
+      "Lightweight for fast reactions"
+    ],
+    faq: [
+      {
+        question: "Is dit geschikt voor beginners?",
+        answer: "Ja, dit is ideaal voor spelers van elk niveau."
+      }
+    ],
+    cjDropshipping: {
+      productId: "2602260135131634300",
+      variantId: "CJDK2767615",
+      supplierMatch: true,
+      lastSync: new Date().toISOString()
+    },
+    shippingEstimateMinDays: 6,
+    shippingEstimateMaxDays: 12,
+    returnWindowDays: 14,
+    shippingCost: 0
+  },

@@ -1,68 +1,90 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { getAllProducts } from "@/data/products";
-import { formatPriceFromEuros } from "@/lib/utils";
+"use client";
 
-export function FeaturedProducts() {
-  const products = getAllProducts();
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ProductData } from "@/data/products";
+
+export function FeaturedProducts({ products }: { products: ProductData[] }) {
+  // Use framer motion container variant for staggered children
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15 }
+    }
+  };
+
+  const popIn = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+  };
 
   return (
-    <section className="section-padding">
-      <div className="page-width">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-text-primary">
-            Onze starter kits
-          </h2>
-          <p className="mt-3 text-text-secondary">
-            Drie samengestelde sets. Alles wat je nodig hebt, niets wat je niet
-            nodig hebt.
-          </p>
+    <section className="py-32 bg-inverse-surface overflow-hidden" id="performance">
+      <div className="max-w-screen-2xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+          <motion.h2 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1.2, ease: [0.2, 0.8, 0.2, 1] }}
+            className="font-headline text-5xl md:text-8xl font-black text-surface leading-none"
+          >
+            PRESTATIE<br />
+            <span className="text-stroke">COLLECTIE</span>
+          </motion.h2>
+          
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: [0.2, 0.8, 0.2, 1], delay: 0.3 }}
+            className="hidden md:flex gap-4"
+          >
+            <button className="w-14 h-14 rounded-full border border-surface/20 flex items-center justify-center text-surface hover:bg-surface hover:text-inverse-surface transition-all">
+              <span className="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+            </button>
+            <button className="w-14 h-14 rounded-full border border-surface/20 flex items-center justify-center text-surface hover:bg-surface hover:text-inverse-surface transition-all">
+              <span className="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+            </button>
+          </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product) => (
-            <Link
-              key={product.id}
-              href={`/products/${product.slug}`}
-              className="group bg-surface rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow overflow-hidden"
-            >
-              <div className="relative aspect-square overflow-hidden bg-gray-50">
-                <Image
-                  src={product.primaryImage}
-                  alt={product.name}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                {product.badge && (
-                  <span className="absolute top-3 left-3 bg-brand-green text-white text-xs font-medium px-3 py-1 rounded-full">
-                    {product.badge}
-                  </span>
-                )}
-              </div>
-              <div className="p-6">
-                <p className="text-xs text-muted-foreground mb-1">
-                  {product.category}
-                </p>
-                <h3 className="text-lg font-semibold text-text-primary group-hover:text-brand-green transition-colors">
-                  {product.name}
-                </h3>
-                <p className="mt-2 text-sm text-text-secondary line-clamp-2">
-                  {product.shortDescription}
-                </p>
-                <div className="mt-4 flex items-center justify-between">
-                  <span className="text-xl font-semibold text-text-primary">
-                    {formatPriceFromEuros(product.basePriceIncVat)}
-                  </span>
-                  <Button size="sm" variant="secondary" className="pointer-events-none">
-                    Bekijk
-                  </Button>
+        <motion.div 
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+        >
+          {products.slice(0, 3).map((product) => (
+            <motion.div key={product.id} variants={popIn}>
+              <Link href={`/products/${product.slug}`} className="block h-full">
+                <div className="bg-[#18181b] rounded-xl p-8 group hover:bg-[#27272a] transition-colors duration-500 h-full flex flex-col cursor-pointer">
+                  <div className="aspect-[3/4] mb-8 overflow-hidden rounded-lg flex-shrink-0 bg-surface">
+                    <img 
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                      alt={product.name} 
+                      src={product.primaryImage || '/images/placeholder.jpg'}
+                    />
+                  </div>
+                  <div className="flex justify-between items-start mb-4 mt-auto">
+                    <div>
+                      <h4 className="text-surface font-headline text-2xl font-bold line-clamp-1">{product.name}</h4>
+                      <p className="text-on-surface-variant font-label text-xs tracking-widest mt-1 uppercase">
+                        {product.badge || 'PRO SERIES'}
+                      </p>
+                    </div>
+                    <span className="text-primary-container font-headline font-black text-xl flex-shrink-0 ml-4">
+                      €{product.basePriceIncVat.toFixed(2)}
+                    </span>
+                  </div>
+                  <div className="h-1 w-0 group-hover:w-full bg-primary-container transition-all duration-500 mt-2 rounded"></div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

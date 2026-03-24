@@ -7,9 +7,9 @@ import {
 
 const faqs = [
   {
-    question: "Wat is pickleball?",
+    question: "Wat is padel?",
     answer:
-      "Pickleball is een sport die elementen van tennis, badminton en tafeltennis combineert. Het wordt gespeeld op een kleiner veld met een licht racket (paddle) en een plastic bal met gaatjes. Het is makkelijk te leren en geschikt voor alle leeftijden.",
+      "Padel is een populaire sport die elementen van tennis en squash combineert. Het wordt gespeeld op een kleiner veld met een racket zonder snaren (paddle) en een bal die lijkt op een tennisbal. Het is makkelijk te leren en geschikt voor alle leeftijden.",
   },
   {
     question: "Hoe snel wordt mijn bestelling geleverd?",
@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "Zijn jullie een Nederlands bedrijf?",
     answer:
-      "Ja, CourtStart NL is een KVK-geregistreerd bedrijf in Nederland. We focussen specifiek op de Nederlandse markt.",
+      "Ja, PaddleForge is een KVK-geregistreerd bedrijf in Nederland. We focussen specifiek op de Nederlandse markt.",
   },
 ];
 

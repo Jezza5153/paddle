@@ -12,7 +12,7 @@ const importSchema = z.object({
   description: z.string(),
   basePriceIncVat: z.number(),
   category: z.string(),
-  brand: z.string().default("CourtStart"),
+  brand: z.string().default("PaddleForge"),
 });
 
 export async function POST(request: Request) {

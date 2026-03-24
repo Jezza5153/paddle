@@ -1,27 +1,79 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Brand Colors */
-  --color-background: #F7F8FA;
-  --color-surface: #FFFFFF;
-  --color-text-primary: #101828;
-  --color-text-secondary: #475467;
-  --color-border: #E4E7EC;
-  --color-brand-green: #0E9F6E;
-  --color-brand-green-hover: #0A7F58;
-  --color-accent-navy: #163A5F;
-  --color-success: #12B76A;
-  --color-warning: #F79009;
-  --color-error: #F04438;
-  --color-border-button: #D0D5DD;
-  --color-muted-foreground: #475467;
+  /* Kinetic Precision Theme Colors */
+  --color-tertiary-fixed: #fbfcff;
+  --color-primary-dim: #465600;
+  --color-on-tertiary-fixed: #4c4f51;
+  --color-secondary-dim: #504f4f;
+  --color-on-surface: #2f2e2e;
+  --color-error-container: #f95630;
+  --color-background: #0e0e0e;
+  --color-surface: #0e0e0e;
+  --color-tertiary: #595c5e;
+  --color-secondary-fixed: #e5e2e1;
+  --color-on-secondary-container: #525151;
+  --color-surface-tint: #516200;
+  --color-on-secondary-fixed-variant: #5c5b5b;
+  --color-secondary-fixed-dim: #d7d4d3;
+  --color-surface-variant: #1a1a1a;
+  --color-error: #b02500;
+  --color-on-tertiary: #f1f3f5;
+  --color-on-primary-fixed-variant: #556800;
+  --color-on-tertiary-container: #5e6163;
+  --color-tertiary-dim: #4d5052;
+  --color-on-surface-variant: #9e9c9c;
+  --color-inverse-primary: #d4ff00;
+  --color-inverse-on-surface: #9e9c9c;
+  --color-outline-variant: #333333;
+  --color-surface-container-lowest: #000000;
+  --color-on-primary-fixed: #3c4a00;
+  --color-surface-dim: #141414;
+  --color-on-background: #ffffff;
+  --color-on-error: #ffefec;
+  --color-primary-container: #d1fc00;
+  --color-on-secondary: #f5f2f1;
+  --color-inverse-surface: #ffffff;
+  --color-surface-container-low: #121212;
+  --color-tertiary-container: #fbfcff;
+  --color-primary-fixed-dim: #c4ec00;
+  --color-outline: #4d4d4d;
+  --color-on-primary: #0e0e0e;
+  --color-tertiary-fixed-dim: #eceef0;
+  --color-on-secondary-fixed: #403f3f;
+  --color-primary-fixed: #d1fc00;
+  --color-primary: #d1fc00;
+  --color-surface-container-highest: #262626;
+  --color-on-tertiary-fixed-variant: #696c6e;
+  --color-on-primary-container: #0e0e0e;
+  --color-surface-bright: #1a1a1a;
+  --color-on-error-container: #520c00;
+  --color-surface-container-high: #1e1e1e;
+  --color-secondary: #5c5b5b;
+  --color-secondary-container: #1a1a1a;
+  --color-surface-container: #141414;
+  --color-error-dim: #b92902;
 
-  /* Font */
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  /* Font Families */
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-label: 'Space Grotesk', sans-serif;
+  --font-sans: 'Manrope', sans-serif;
+
+  /* Legacy aliases for old components (safeguards) */
+  --color-text-primary: var(--color-on-surface);
+  --color-text-secondary: var(--color-on-surface-variant);
+  --color-border: var(--color-outline-variant);
+  --color-brand-green: var(--color-primary);
+  --color-brand-green-hover: var(--color-primary-dim);
+  --color-success: var(--color-primary);
 
   /* Radius */
-  --radius-2xl: 1rem;
   --radius-full: 9999px;
+  --radius-2xl: 1rem;
+  --radius-xl: 0.75rem;
+  --radius-lg: 0.5rem;
+  --radius-md: 0.375rem;
 }
 
 @layer base {
@@ -30,29 +82,46 @@
   }
 
   body {
-    background-color: var(--color-background);
-    color: var(--color-text-primary);
-    font-family: var(--font-sans);
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   * {
-    border-color: var(--color-border);
+    border-color: var(--color-outline-variant);
   }
 }
 
-/* Utility classes for the design system */
+/* Utility classes for Kinetic Precision design system */
 @layer utilities {
   .section-padding {
-    @apply py-14 md:py-20;
+    @apply py-24 md:py-32;
   }
 
   .page-width {
-    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-screen-2xl px-6;
   }
 
   .content-width {
     @apply mx-auto max-w-3xl;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  .kinetic-gradient {
+    background: radial-gradient(circle at 45% 45%, var(--color-primary-container) 0%, var(--color-primary) 100%);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 1px var(--color-primary);
+    color: transparent;
   }
 }
