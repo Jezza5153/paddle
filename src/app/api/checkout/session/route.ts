@@ -1,12 +1,16 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
+import https from "https";
 import { z } from "zod";
 import { getProductBySlug } from "@/data/products";
+
+const agent = new https.Agent({ keepAlive: false });
 
 function getStripe() {
   return new Stripe(process.env.STRIPE_SECRET_KEY || "", {
     apiVersion: "2025-02-24.acacia" as Stripe.LatestApiVersion,
-    httpClient: Stripe.createNodeHttpClient(),
+    httpAgent: agent,
+    timeout: 15000,
   });
 }
 
