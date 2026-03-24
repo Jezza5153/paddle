@@ -1,6 +1,8 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY || "");
+}
 
 interface OrderConfirmationData {
   email: string;
@@ -12,7 +14,7 @@ interface OrderConfirmationData {
 
 export async function sendOrderConfirmation(data: OrderConfirmationData) {
   try {
-    await resend.emails.send({
+    await getResend().emails.send({
       from: "PaddleForge <info@paddleforge.nl>",
       to: data.email,
       subject: `Bestelling bevestigd — ${data.orderNumber}`,
