@@ -129,6 +129,50 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
         </div>
       </div>
+
+      {/* Product Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: product.name,
+            description: product.description,
+            image: `https://paddleforge.nl${product.primaryImage}`,
+            brand: { "@type": "Brand", name: product.brand },
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "EUR",
+              price: product.basePriceIncVat,
+              availability: "https://schema.org/InStock",
+              url: `https://paddleforge.nl/products/${product.slug}`,
+              seller: { "@type": "Organization", name: "PaddleForge" },
+            },
+          }),
+        }}
+      />
+
+      {/* FAQ Schema */}
+      {product.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: product.faq.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
     </>
   );
 }

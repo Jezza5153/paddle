@@ -5,6 +5,7 @@ import { AnnouncementBar } from "@/components/layout/announcement-bar";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { CartProvider } from "@/lib/cart-context";
+import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -58,6 +59,7 @@ export default function RootLayout({
         <CartProvider>
           <AnnouncementBar />
           <Header />
+          <Breadcrumbs />
           <main className="flex-1">{children}</main>
           <Footer />
         </CartProvider>
