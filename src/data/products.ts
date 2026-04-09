@@ -812,6 +812,7 @@ export const products: ProductData[] = [
   // ═════════════════════════════════════════════════════════════
   {
     id: "seasonal_projectie_ketting",
+    cjProductId: "1425758597723328512",
     slug: "projectie-ketting-ik-hou-van-je",
     name: "Projectie Ketting \"Ik Hou Van Je\"",
     shortDescription:
@@ -874,6 +875,7 @@ export const products: ProductData[] = [
   },
   {
     id: "seasonal_eeuwige_roos",
+    cjProductId: "1737398203613454336",
     slug: "eeuwige-roos-glazen-stolp",
     name: "Eeuwige Roos in Glazen Stolp",
     shortDescription:
@@ -905,6 +907,7 @@ export const products: ProductData[] = [
   },
   {
     id: "seasonal_nekmassage",
+    cjProductId: "2407090200011626000",
     slug: "draagbaar-nekmassage-apparaat",
     name: "Draagbaar Nekmassage Apparaat",
     shortDescription:
@@ -936,6 +939,7 @@ export const products: ProductData[] = [
   },
   {
     id: "seasonal_makeup_spiegel",
+    cjProductId: "353FD080-B77F-4F8C-B27F-CA33945F8FEE",
     slug: "led-makeup-spiegel",
     name: "LED Make-up Spiegel",
     shortDescription:
@@ -970,6 +974,7 @@ export const products: ProductData[] = [
   // ═════════════════════════════════════════════════════════════
   {
     id: "seasonal_nekventilator",
+    cjProductId: "1522523937266216960",
     slug: "draagbare-nekventilator",
     name: "Draagbare Nekventilator",
     shortDescription:
@@ -1001,6 +1006,7 @@ export const products: ProductData[] = [
   },
   {
     id: "seasonal_solar_tuinverlichting",
+    cjProductId: "1427134898216505344",
     slug: "solar-tuinverlichting-led",
     name: "Solar Tuinverlichting LED Snoer",
     shortDescription:
@@ -1032,6 +1038,7 @@ export const products: ProductData[] = [
   },
   {
     id: "seasonal_draagbare_blender",
+    cjProductId: "1392009095543918592",
     slug: "draagbare-smoothie-blender",
     name: "Draagbare Smoothie Blender",
     shortDescription:
@@ -1063,6 +1070,7 @@ export const products: ProductData[] = [
   },
   {
     id: "seasonal_elektrisch_waterpistool",
+    cjProductId: "1660892393715011584",
     slug: "elektrisch-waterpistool",
     name: "Elektrisch Waterpistool",
     shortDescription:
@@ -1094,6 +1102,7 @@ export const products: ProductData[] = [
   },
   {
     id: "seasonal_camping_lamp",
+    cjProductId: "1681170786222088192",
     slug: "oplaadbare-camping-lamp",
     name: "Oplaadbare Camping Lamp",
     shortDescription:
