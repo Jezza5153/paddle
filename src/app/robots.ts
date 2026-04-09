@@ -7,8 +7,15 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/admin/"],
+        disallow: ["/api/", "/admin/", "/cart", "/success"],
       },
+      // Explicitly allow AI crawlers for LLM/GEO visibility
+      { userAgent: "GPTBot", allow: "/" },
+      { userAgent: "ChatGPT-User", allow: "/" },
+      { userAgent: "Google-Extended", allow: "/" },
+      { userAgent: "PerplexityBot", allow: "/" },
+      { userAgent: "ClaudeBot", allow: "/" },
+      { userAgent: "Applebot-Extended", allow: "/" },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
   };

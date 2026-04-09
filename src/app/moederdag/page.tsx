@@ -148,6 +148,26 @@ export default function MoederdagPage() {
         </div>
       </section>
 
+      {/* About Moederdag — rich content for GEO/SEO */}
+      <section className="py-24 px-8">
+        <div className="max-w-screen-md mx-auto">
+          <h2 className="font-headline text-3xl font-black tracking-tighter uppercase mb-8 text-on-surface text-center">
+            Moederdag <span className="text-pink-400">2026</span>
+          </h2>
+          <div className="space-y-4 text-on-surface-variant leading-relaxed text-sm">
+            <p>
+              Moederdag wordt in Nederland gevierd op de <strong>tweede zondag van mei</strong> — in 2026 valt dat op <strong>11 mei</strong>. Volgens onderzoek van Thuiswinkel.org besteden Nederlanders gemiddeld <strong>€25-€35</strong> aan een moederdag cadeau, waarbij online aankopen elk jaar groeien.
+            </p>
+            <p>
+              De populairste cadeau-categorieën zijn <strong>sieraden, wellness en beauty, bloemen en persoonlijke geschenken</strong>. Steeds meer Nederlanders kiezen voor een cadeau dat langer meegaat dan verse bloemen — denk aan een eeuwige roos, een jade roller set of een persoonlijke ketting.
+            </p>
+            <p>
+              Bij PaddleForge vind je unieke moederdag cadeaus die je nergens anders vindt. Van een ketting die &quot;ik hou van je&quot; in 100 talen projecteert tot een luxe nekmassage apparaat — allemaal mooi verpakt en cadeau-klaar geleverd.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why PaddleForge */}
       <section className="py-24 px-8 bg-surface-container-low">
         <div className="max-w-screen-xl mx-auto">

@@ -159,6 +159,26 @@ export default function KoningsdagPage() {
         </div>
       </section>
 
+      {/* About Koningsdag — rich content for GEO/SEO */}
+      <section className="py-24 px-8">
+        <div className="max-w-screen-md mx-auto">
+          <h2 className="font-headline text-3xl font-black tracking-tighter uppercase mb-8 text-on-surface text-center">
+            Wat is <span className="text-orange-400">Koningsdag?</span>
+          </h2>
+          <div className="space-y-4 text-on-surface-variant leading-relaxed text-sm">
+            <p>
+              Koningsdag is de nationale feestdag van Nederland, gevierd op <strong>27 april</strong> ter ere van de verjaardag van Koning Willem-Alexander. Volgens het CBS vieren jaarlijks meer dan <strong>8,8 miljoen Nederlanders</strong> actief Koningsdag, wat het de drukst bezochte feestdag van het land maakt.
+            </p>
+            <p>
+              De traditie van de <strong>vrijmarkt</strong> trekt elk jaar miljoenen bezoekers, met Amsterdam, Utrecht en Rotterdam als populairste bestemmingen. In 2026 vindt het officiële Koninklijke bezoek plaats in <strong>Dokkum, Friesland</strong>.
+            </p>
+            <p>
+              De kleur <strong>oranje</strong> is onlosmakelijk verbonden met Koningsdag. Van oranje T-shirts en feestbrillen tot schmink en vlaggen — vrijwel iedereen kleedt zich in de nationale kleur. Bij PaddleForge vind je alle oranje accessoires die je nodig hebt voor een geslaagde Koningsdag.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why PaddleForge for Koningsdag */}
       <section className="py-24 px-8 bg-surface-container-low">
         <div className="max-w-screen-xl mx-auto">

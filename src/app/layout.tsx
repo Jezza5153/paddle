@@ -56,6 +56,9 @@ export default function RootLayout({
         <meta name="geo.placename" content="Nederland" />
         <meta name="geo.position" content="52.3676;4.9041" />
         <meta name="ICBM" content="52.3676, 4.9041" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2XX2WMTVT" />
@@ -83,10 +86,37 @@ export default function RootLayout({
               name: "PaddleForge",
               url: process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl",
               description:
-                "Slimme padel accessoires en starter kits in Nederland.",
+                "Nederlandse webshop voor padel accessoires, Koningsdag artikelen, moederdag cadeaus en zomerproducten. Veilig betalen met iDEAL.",
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "NL",
+              },
+              areaServed: {
+                "@type": "Country",
+                name: "Netherlands",
+              },
+              paymentAccepted: ["iDEAL", "Visa", "Mastercard", "Apple Pay", "Google Pay"],
+              currenciesAccepted: "EUR",
+            }),
+          }}
+        />
+        {/* WebSite Schema with SearchAction */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "PaddleForge",
+              url: process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl",
+              inLanguage: "nl",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/shop?q={search_term_string}`,
+                },
+                "query-input": "required name=search_term_string",
               },
             }),
           }}
