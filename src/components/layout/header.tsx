@@ -7,9 +7,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { href: "/shop", label: "Winkel" },
-  { href: "/#technology", label: "Technologie" },
-  { href: "/#performance", label: "Prestaties" },
-  { href: "/#teams", label: "Teams" },
+  { href: "/koningsdag", label: "Koningsdag" },
+  { href: "/moederdag", label: "Moederdag" },
+  { href: "/wk-2026", label: "WK 2026" },
 ];
 
 export function Header() {

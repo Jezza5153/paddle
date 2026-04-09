@@ -49,7 +49,7 @@ export function ProductSummary({ product }: ProductSummaryProps) {
           >
             <span className="material-symbols-outlined text-sm">remove</span>
           </button>
-          <span className="px-4 py-3 text-sm font-medium text-center flex-1">
+          <span className="px-4 py-3 text-sm font-medium text-center flex-1 text-white">
             {quantity}
           </span>
           <button

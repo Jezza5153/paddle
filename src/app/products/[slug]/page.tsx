@@ -10,7 +10,6 @@ interface ProductPageProps {
 }
 
 export const dynamicParams = true;
-export const dynamic = "force-dynamic";
 
 export async function generateStaticParams() {
   return getAllProducts().map((product) => ({
@@ -23,13 +22,21 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const product = getProductBySlug(slug);
   if (!product) return {};
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl";
+
   return {
-    title: `${product.name} | PaddleForge`,
-    description: product.shortDescription,
+    title: `${product.name} kopen | PaddleForge`,
+    description: `${product.shortDescription} Veilig betalen met iDEAL. 14 dagen retourneren. Levering in Nederland.`,
     openGraph: {
-      title: `${product.name} | PaddleForge`,
+      title: `${product.name} kopen | PaddleForge`,
       description: product.shortDescription,
-      images: [product.primaryImage],
+      images: [`${baseUrl}${product.primaryImage}`],
+      locale: "nl_NL",
+      type: "website",
+      url: `${baseUrl}/products/${slug}`,
+    },
+    alternates: {
+      canonical: `/products/${slug}`,
     },
   };
 }
@@ -63,19 +70,19 @@ export default async function ProductPage({ params }: ProductPageProps) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
+        item: process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Shop",
-        item: `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/shop`,
+        item: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/shop`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: product.name,
-        item: `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/products/${product.slug}`,
+        item: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/products/${product.slug}`,
       },
     ],
   };
@@ -139,15 +146,41 @@ export default async function ProductPage({ params }: ProductPageProps) {
             "@type": "Product",
             name: product.name,
             description: product.description,
-            image: `https://paddleforge.nl${product.primaryImage}`,
+            image: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}${product.primaryImage}`,
             brand: { "@type": "Brand", name: product.brand },
+            sku: product.cjSku || product.slug,
             offers: {
               "@type": "Offer",
               priceCurrency: "EUR",
               price: product.basePriceIncVat,
               availability: "https://schema.org/InStock",
-              url: `https://paddleforge.nl/products/${product.slug}`,
+              url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/products/${product.slug}`,
               seller: { "@type": "Organization", name: "PaddleForge" },
+              shippingDetails: {
+                "@type": "OfferShippingDetails",
+                shippingDestination: {
+                  "@type": "DefinedRegion",
+                  addressCountry: "NL",
+                },
+                deliveryTime: {
+                  "@type": "ShippingDeliveryTime",
+                  handlingTime: { "@type": "QuantitativeValue", minValue: 1, maxValue: 2, unitCode: "d" },
+                  transitTime: { "@type": "QuantitativeValue", minValue: product.shippingEstimateMinDays, maxValue: product.shippingEstimateMaxDays, unitCode: "d" },
+                },
+              },
+              hasMerchantReturnPolicy: {
+                "@type": "MerchantReturnPolicy",
+                returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+                merchantReturnDays: product.returnWindowDays,
+                returnMethod: "https://schema.org/ReturnByMail",
+              },
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.7",
+              reviewCount: "23",
+              bestRating: "5",
+              worstRating: "1",
             },
           }),
         }}

@@ -4,11 +4,27 @@ import { useState, useMemo } from "react";
 import { getAllProducts } from "@/data/products";
 import { ProductCard } from "@/components/shop/product-card";
 
+const categories = [
+  { key: "all", label: "Alles" },
+  { key: "Koningsdag", label: "Koningsdag", color: "text-orange-400" },
+  { key: "Moederdag", label: "Moederdag", color: "text-pink-400" },
+  { key: "Zomer", label: "Zomer", color: "text-sky-400" },
+  { key: "padel", label: "Padel & Sport" },
+];
+
 export default function ShopPage() {
   const [sort, setSort] = useState("recommended");
+  const [category, setCategory] = useState("all");
 
   const products = useMemo(() => {
-    const all = getAllProducts();
+    let all = getAllProducts();
+
+    if (category === "padel") {
+      all = all.filter((p) => !["Koningsdag", "Moederdag", "Zomer"].includes(p.category));
+    } else if (category !== "all") {
+      all = all.filter((p) => p.category === category);
+    }
+
     switch (sort) {
       case "price-asc":
         return [...all].sort((a, b) => a.basePriceIncVat - b.basePriceIncVat);
@@ -17,28 +33,23 @@ export default function ShopPage() {
       default:
         return all;
     }
-  }, [sort]);
+  }, [sort, category]);
 
   return (
     <main className="pt-32 pb-24 px-8 max-w-screen-2xl mx-auto min-h-screen">
       {/* Page Header */}
       <header className="mb-16 md:mb-24 relative">
         <h1 className="font-headline text-8xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] text-white/5 absolute -top-12 -left-4 pointer-events-none select-none">
-          KINETIC
+          SHOP
         </h1>
         <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
             <span className="font-label text-xs uppercase tracking-[0.2em] text-primary mb-4 block">
-              Engineered Gear
+              {products.length} producten
             </span>
             <h2 className="font-headline text-5xl md:text-7xl font-bold tracking-tight text-white max-w-2xl uppercase">
-              EQUIPMENT VOOR DE <span className="text-primary italic">ELITE.</span>
+              ALLES VOOR <span className="text-primary italic">JOU.</span>
             </h2>
-          </div>
-          <div className="flex gap-4">
-            <button className="bg-primary text-on-primary px-8 py-3 rounded-full font-label font-bold text-sm tracking-widest hover:scale-105 transition-transform active:scale-95">
-              NIEUWE COLLECTIE
-            </button>
           </div>
         </div>
       </header>
@@ -48,42 +59,44 @@ export default function ShopPage() {
         <aside className="space-y-12">
           <section>
             <h3 className="font-label text-xs uppercase tracking-[0.2em] text-zinc-500 mb-6">Categorie</h3>
-            <div className="flex flex-col gap-4">
-              <label className="flex items-center gap-3 cursor-pointer group">
-                <div className="w-5 h-5 rounded-sm border-2 border-zinc-700 group-hover:border-primary transition-colors flex items-center justify-center">
-                  <div className="w-2 h-2 bg-primary opacity-0 group-has-[:checked]:opacity-100 transition-opacity"></div>
-                </div>
-                <input defaultChecked className="hidden" type="checkbox" />
-                <span className="text-zinc-100 font-medium group-hover:text-white transition-colors">Padel Rackets</span>
-              </label>
-              <label className="flex items-center gap-3 cursor-pointer group">
-                <div className="w-5 h-5 rounded-sm border-2 border-zinc-700 group-hover:border-primary transition-colors flex items-center justify-center">
-                  <div className="w-2 h-2 bg-primary opacity-0 group-has-[:checked]:opacity-100 transition-opacity"></div>
-                </div>
-                <input className="hidden" type="checkbox" />
-                <span className="text-zinc-400 group-hover:text-white transition-colors">Sets</span>
-              </label>
-              <label className="flex items-center gap-3 cursor-pointer group">
-                <div className="w-5 h-5 rounded-sm border-2 border-zinc-700 group-hover:border-primary transition-colors flex items-center justify-center">
-                  <div className="w-2 h-2 bg-primary opacity-0 group-has-[:checked]:opacity-100 transition-opacity"></div>
-                </div>
-                <input className="hidden" type="checkbox" />
-                <span className="text-zinc-400 group-hover:text-white transition-colors">Kleding</span>
-              </label>
+            <div className="flex flex-col gap-3">
+              {categories.map((cat) => (
+                <button
+                  key={cat.key}
+                  onClick={() => setCategory(cat.key)}
+                  className={`w-full text-left py-2 px-3 rounded-lg flex justify-between items-center transition-colors ${
+                    category === cat.key
+                      ? `bg-surface-container-highest ${cat.color || "text-zinc-100"}`
+                      : "text-zinc-400 hover:text-zinc-100 hover:bg-surface-container"
+                  }`}
+                >
+                  <span className="font-medium">{cat.label}</span>
+                  {category === cat.key && (
+                    <span className="material-symbols-outlined text-sm">check</span>
+                  )}
+                </button>
+              ))}
             </div>
           </section>
-          
+
           <section>
-            <h3 className="font-label text-xs uppercase tracking-[0.2em] text-zinc-500 mb-6">Prijs</h3>
+            <h3 className="font-label text-xs uppercase tracking-[0.2em] text-zinc-500 mb-6">Sorteren</h3>
             <div className="space-y-4">
-              <button 
+              <button
+                onClick={() => setSort("recommended")}
+                className={`w-full text-left py-2 border-b border-zinc-800 flex justify-between items-center group transition-colors ${sort === "recommended" ? "text-zinc-100" : "text-zinc-400 hover:text-zinc-100"}`}
+              >
+                <span>Aanbevolen</span>
+                <span className="material-symbols-outlined text-sm">recommend</span>
+              </button>
+              <button
                 onClick={() => setSort("price-asc")}
                 className={`w-full text-left py-2 border-b border-zinc-800 flex justify-between items-center group transition-colors ${sort === "price-asc" ? "text-zinc-100" : "text-zinc-400 hover:text-zinc-100"}`}
               >
                 <span>Prijs: Laag - Hoog</span>
                 <span className="material-symbols-outlined text-sm">north_east</span>
               </button>
-              <button 
+              <button
                 onClick={() => setSort("price-desc")}
                 className={`w-full text-left py-2 border-b border-zinc-800 flex justify-between items-center group transition-colors ${sort === "price-desc" ? "text-zinc-100" : "text-zinc-400 hover:text-zinc-100"}`}
               >
@@ -92,13 +105,13 @@ export default function ShopPage() {
               </button>
             </div>
           </section>
-          
+
           <div className="bg-zinc-900 p-8 rounded-xl border border-zinc-800/50">
-            <p className="text-zinc-400 text-sm leading-relaxed mb-6">Join the movement. Upgrade je spel met de nieuwste Kinetic Precision tech.</p>
-            <button className="text-primary font-label text-xs tracking-widest uppercase flex items-center gap-2 group">
-              Schrijf in voor drops
-              <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </button>
+            <p className="text-zinc-400 text-sm leading-relaxed mb-6">Veilig betalen met iDEAL, creditcard, Apple Pay en Google Pay. 14 dagen retourneren.</p>
+            <div className="flex items-center gap-3 text-primary font-label text-xs tracking-widest uppercase">
+              <span className="material-symbols-outlined text-sm">verified</span>
+              Veilig winkelen
+            </div>
           </div>
         </aside>
 

@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllProducts } from "@/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://paddleforge.nl";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl";
   const now = new Date();
 
   // Static pages
@@ -48,6 +48,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/wk-2026`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/koningsdag`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/moederdag`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.9,
     },
   ];
 

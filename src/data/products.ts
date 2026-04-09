@@ -620,6 +620,509 @@ export const products: ProductData[] = [
     cjSku: "CJDK2767615",
     cjCostUsd: 6.97,
   },
+
+  // ═════════════════════════════════════════════════════════════
+  // KONINGSDAG / WK 2026 — Orange themed products
+  // ═════════════════════════════════════════════════════════════
+  {
+    id: "seasonal_oranje_zonnebril",
+    slug: "oranje-feestbril-koningsdag",
+    name: "Oranje Feestbril Koningsdag",
+    shortDescription:
+      "Oranje partybril voor Koningsdag en WK 2026. Laat zien dat je oranje bent!",
+    description:
+      "De ultieme Koningsdag accessoire. Deze oranje feestbril maakt je outfit compleet op King's Day, bij het WK voetbal of elk ander oranjefeest. Lichtgewicht, comfortabel en een absolute eyecatcher op de vrijmarkt.",
+    status: "active",
+    basePriceIncVat: 9.95,
+    compareAtPriceIncVat: 14.95,
+    primaryImage: "/images/products/oranje-feestbril.jpg",
+    galleryImages: ["/images/products/oranje-feestbril.jpg"],
+    brand: "PaddleForge",
+    category: "Koningsdag",
+    badge: "Koningsdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x oranje feestbril"],
+    bulletPoints: [
+      "Felle oranje kleur — valt op in elke menigte",
+      "Lichtgewicht en comfortabel",
+      "Perfect voor Koningsdag, WK 2026 en festivals",
+      "UV-bescherming",
+    ],
+    faq: [
+      { question: "Past deze bril op elk gezicht?", answer: "Ja, de bril heeft een universele pasvorm die op de meeste gezichten past." },
+      { question: "Kan ik deze ook bij het WK gebruiken?", answer: "Absoluut! Oranje is oranje — perfect voor Koningsdag én het WK voetbal 2026." },
+    ],
+  },
+  {
+    id: "seasonal_oranje_bucket_hat",
+    slug: "oranje-bucket-hat",
+    name: "Oranje Bucket Hat",
+    shortDescription:
+      "Trendy oranje bucket hat voor Koningsdag en zomerfestivals.",
+    description:
+      "Ga stijlvol in het oranje met deze trendy bucket hat. Perfect voor Koningsdag, het WK voetbal en zomerfestivals. Gemaakt van licht katoen, comfortabel de hele dag.",
+    status: "active",
+    basePriceIncVat: 14.95,
+    compareAtPriceIncVat: 19.95,
+    primaryImage: "/images/products/oranje-bucket-hat.jpg",
+    galleryImages: ["/images/products/oranje-bucket-hat.jpg"],
+    brand: "PaddleForge",
+    category: "Koningsdag",
+    badge: "Koningsdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x oranje bucket hat"],
+    bulletPoints: [
+      "100% katoen — ademend en comfortabel",
+      "Trendy bucket hat model",
+      "Zonbescherming voor buiten",
+      "Oranje — klaar voor Koningsdag en WK",
+    ],
+    faq: [
+      { question: "Welke maat is het?", answer: "One size fits most. De hat past comfortabel op de meeste hoofdmaten (56-60cm)." },
+    ],
+  },
+  {
+    id: "seasonal_oranje_schmink",
+    slug: "oranje-schmink-set",
+    name: "Oranje Schmink Set",
+    shortDescription:
+      "Schmink sticks in oranje, rood, wit en blauw. Veilig voor de huid.",
+    description:
+      "Schmink je gezicht in de kleuren van Nederland! Deze set bevat schminksticks in oranje plus rood-wit-blauw voor de Nederlandse vlag. Veilig op de huid, makkelijk af te wassen. Ideaal voor kinderen en volwassenen op Koningsdag of bij WK wedstrijden.",
+    status: "active",
+    basePriceIncVat: 9.95,
+    compareAtPriceIncVat: null,
+    primaryImage: "/images/products/oranje-schmink-set.jpg",
+    galleryImages: ["/images/products/oranje-schmink-set.jpg"],
+    brand: "PaddleForge",
+    category: "Koningsdag",
+    badge: "Koningsdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["4x schmink sticks (oranje, rood, wit, blauw)"],
+    bulletPoints: [
+      "Veilig voor de huid — niet-toxisch",
+      "Makkelijk af te wassen met water",
+      "4 kleuren: oranje + rood, wit, blauw",
+      "Geschikt voor kinderen en volwassenen",
+    ],
+    faq: [
+      { question: "Is het veilig voor kinderen?", answer: "Ja, de schmink is dermatologisch getest en veilig voor kinderen vanaf 3 jaar." },
+    ],
+  },
+  {
+    id: "seasonal_oranje_led_ketting",
+    slug: "oranje-led-ketting",
+    name: "Oranje LED Ketting",
+    shortDescription:
+      "Lichtgevende oranje ketting voor feesten. Batterij inbegrepen.",
+    description:
+      "Val op bij elk oranjefeest met deze lichtgevende LED ketting. De heldere oranje LED's zorgen voor een feestelijke look, vooral 's avonds op de vrijmarkt of bij een WK viewing party. Batterij inbegrepen, direct klaar voor gebruik.",
+    status: "active",
+    basePriceIncVat: 12.95,
+    compareAtPriceIncVat: 17.95,
+    primaryImage: "/images/products/oranje-led-ketting.jpg",
+    galleryImages: ["/images/products/oranje-led-ketting.jpg"],
+    brand: "PaddleForge",
+    category: "Koningsdag",
+    badge: "Koningsdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x oranje LED ketting", "Batterij inbegrepen"],
+    bulletPoints: [
+      "Heldere oranje LED verlichting",
+      "Batterij inbegrepen — direct klaar",
+      "Lichtgewicht en comfortabel",
+      "Perfect voor avondfeesten en viewing parties",
+    ],
+    faq: [
+      { question: "Hoe lang gaat de batterij mee?", answer: "De batterij gaat circa 8-10 uur mee bij continu gebruik." },
+    ],
+  },
+  {
+    id: "seasonal_oranje_vlag",
+    slug: "nederland-vlag-groot",
+    name: "Nederlandse Vlag (150x90cm)",
+    shortDescription:
+      "Grote Nederlandse vlag voor Koningsdag, WK en nationale feestdagen.",
+    description:
+      "Hang de Nederlandse driekleur uit! Deze grote vlag (150x90cm) is perfect voor Koningsdag, het WK voetbal, Bevrijdingsdag en elke andere gelegenheid om je Nederlandse trots te tonen. Stevige kwaliteit met ophangringen.",
+    status: "active",
+    basePriceIncVat: 14.95,
+    compareAtPriceIncVat: 19.95,
+    primaryImage: "/images/products/nederland-vlag.jpg",
+    galleryImages: ["/images/products/nederland-vlag.jpg"],
+    brand: "PaddleForge",
+    category: "Koningsdag",
+    badge: "Koningsdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x Nederlandse vlag 150x90cm", "2x ophangringen"],
+    bulletPoints: [
+      "150 x 90 cm — goed zichtbaar",
+      "Stevige polyester kwaliteit",
+      "Ophangringen inbegrepen",
+      "Geschikt voor binnen en buiten",
+    ],
+    faq: [
+      { question: "Kan deze vlag buiten hangen?", answer: "Ja, de vlag is gemaakt van weerbestendig polyester en geschikt voor buitengebruik." },
+    ],
+  },
+  {
+    id: "seasonal_oranje_tshirt",
+    slug: "oranje-t-shirt-koningsdag",
+    name: "Oranje T-Shirt",
+    shortDescription:
+      "Basis oranje T-shirt voor Koningsdag en het WK. Unisex, comfortabel.",
+    description:
+      "Het oranje shirt dat iedereen nodig heeft. Of het nu Koningsdag is, het WK voetbal of gewoon een zonnige dag in het park — dit comfortabele oranje T-shirt is de basis van elke oranje outfit. Unisex model, verkrijgbaar in S t/m XXL.",
+    status: "active",
+    basePriceIncVat: 14.95,
+    compareAtPriceIncVat: 19.95,
+    primaryImage: "/images/products/oranje-tshirt.jpg",
+    galleryImages: ["/images/products/oranje-tshirt.jpg"],
+    brand: "PaddleForge",
+    category: "Koningsdag",
+    badge: "Koningsdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x oranje T-shirt"],
+    bulletPoints: [
+      "100% katoen — comfortabel de hele dag",
+      "Unisex model S t/m XXL",
+      "Felle oranje kleur",
+      "Perfect als basis voor Koningsdag outfit",
+    ],
+    faq: [
+      { question: "Welke maten zijn beschikbaar?", answer: "S, M, L, XL en XXL. Unisex pasvorm." },
+      { question: "Valt het groot of klein?", answer: "Het shirt valt normaal. Bij twijfel een maat groter bestellen." },
+    ],
+  },
+
+  // ═════════════════════════════════════════════════════════════
+  // MOEDERDAG — Cadeaus voor mama
+  // ═════════════════════════════════════════════════════════════
+  {
+    id: "seasonal_projectie_ketting",
+    slug: "projectie-ketting-ik-hou-van-je",
+    name: "Projectie Ketting \"Ik Hou Van Je\"",
+    shortDescription:
+      "Ketting die \"I love you\" in 100 talen projecteert. Perfect moederdag cadeau.",
+    description:
+      "Verras mama met deze unieke ketting die \"I love you\" in 100 verschillende talen projecteert wanneer je de hanger tegen het licht houdt. Een persoonlijk en emotioneel cadeau dat ze elke dag kan dragen. Geleverd in een mooie geschenkdoos.",
+    status: "active",
+    basePriceIncVat: 24.95,
+    compareAtPriceIncVat: 34.95,
+    primaryImage: "/images/products/projectie-ketting.jpg",
+    galleryImages: ["/images/products/projectie-ketting.jpg"],
+    brand: "PaddleForge",
+    category: "Moederdag",
+    badge: "Moederdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x projectie ketting", "Geschenkdoos"],
+    bulletPoints: [
+      "Projecteert \"I love you\" in 100 talen",
+      "Inclusief elegante geschenkdoos",
+      "Verstelbare ketting lengte",
+      "Hypoallergeen materiaal",
+    ],
+    faq: [
+      { question: "Hoe werkt de projectie?", answer: "Houd de hanger dicht bij een lichtbron of zaklamp. De boodschap wordt op een oppervlak geprojecteerd." },
+      { question: "Is het echt goud?", answer: "De ketting is verguld (gold plated) en hypoallergeen. Geschikt voor dagelijks gebruik." },
+    ],
+  },
+  {
+    id: "seasonal_jade_roller",
+    slug: "jade-roller-gua-sha-set",
+    name: "Jade Roller & Gua Sha Set",
+    shortDescription:
+      "Gezichtsmassage set van echte jade. Luxe cadeau voor haar.",
+    description:
+      "Geef mama de gift van ontspanning met deze jade roller en gua sha set. Echte jade steen die de bloedsomloop stimuleert, zwelling vermindert en de huid een gezonde glow geeft. Een luxe self-care ritueel dat elke dag een beetje spa-gevoel brengt.",
+    status: "active",
+    basePriceIncVat: 19.95,
+    compareAtPriceIncVat: 29.95,
+    primaryImage: "/images/products/jade-roller-set.jpg",
+    galleryImages: ["/images/products/jade-roller-set.jpg"],
+    brand: "PaddleForge",
+    category: "Moederdag",
+    badge: "Moederdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x jade roller", "1x gua sha steen", "Opbergzakje"],
+    bulletPoints: [
+      "Echte jade steen — koelend en kalmerend",
+      "Vermindert zwelling en wallen",
+      "Stimuleert bloedsomloop",
+      "Luxe geschenk met opbergzakje",
+    ],
+    faq: [
+      { question: "Is het echte jade?", answer: "Ja, beide stukken zijn gemaakt van echte jade steen." },
+      { question: "Hoe gebruik je een gua sha?", answer: "Breng serum of olie aan op het gezicht en schuif de gua sha met zachte druk langs de kaaklijnen en jukbeenderen." },
+    ],
+  },
+  {
+    id: "seasonal_eeuwige_roos",
+    slug: "eeuwige-roos-glazen-stolp",
+    name: "Eeuwige Roos in Glazen Stolp",
+    shortDescription:
+      "Geconserveerde roos in glazen stolp met LED verlichting. Gaat jaren mee.",
+    description:
+      "Mooier dan verse bloemen en gaat jaren mee. Deze geconserveerde roos in een elegante glazen stolp met LED verlichting is het perfecte romantische cadeau. Geen water nodig, geen verwelkte blaadjes — alleen een prachtige roos die je kamer siert.",
+    status: "active",
+    basePriceIncVat: 29.95,
+    compareAtPriceIncVat: 44.95,
+    primaryImage: "/images/products/eeuwige-roos.jpg",
+    galleryImages: ["/images/products/eeuwige-roos.jpg"],
+    brand: "PaddleForge",
+    category: "Moederdag",
+    badge: "Moederdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x geconserveerde roos", "Glazen stolp", "LED verlichting (batterij inbegrepen)"],
+    bulletPoints: [
+      "Echte roos — geconserveerd om jaren mee te gaan",
+      "Elegante glazen stolp",
+      "Sfeervolle LED verlichting",
+      "Geen onderhoud nodig",
+    ],
+    faq: [
+      { question: "Hoe lang gaat de roos mee?", answer: "Bij normaal gebruik 2-3 jaar. Houd de roos uit direct zonlicht voor de langste levensduur." },
+      { question: "Welke kleur is de roos?", answer: "De roos is rood — de klassieke kleur voor liefde en waardering." },
+    ],
+  },
+  {
+    id: "seasonal_nekmassage",
+    slug: "draagbaar-nekmassage-apparaat",
+    name: "Draagbaar Nekmassage Apparaat",
+    shortDescription:
+      "Elektrisch nekmassage apparaat met warmtefunctie. Ontspanning cadeau.",
+    description:
+      "Geef mama de ontspanning die ze verdient met dit draagbare nekmassage apparaat. Met shiatsu-achtige kneedmassage en warmtefunctie voor diepe spierontspanning. Oplaadbaar via USB, te gebruiken thuis, op kantoor of onderweg.",
+    status: "active",
+    basePriceIncVat: 39.95,
+    compareAtPriceIncVat: 59.95,
+    primaryImage: "/images/products/nekmassage-apparaat.jpg",
+    galleryImages: ["/images/products/nekmassage-apparaat.jpg"],
+    brand: "PaddleForge",
+    category: "Moederdag",
+    badge: "Moederdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x nekmassage apparaat", "USB oplaadkabel"],
+    bulletPoints: [
+      "Shiatsu kneedmassage — diepe ontspanning",
+      "Warmtefunctie voor extra comfort",
+      "Oplaadbaar via USB — draagbaar",
+      "3 intensiteitsniveaus",
+    ],
+    faq: [
+      { question: "Hoe lang gaat de batterij mee?", answer: "Eén volle lading biedt circa 60-90 minuten massage." },
+      { question: "Is het ook geschikt voor de schouders?", answer: "Ja, het apparaat kan gebruikt worden voor nek, schouders en de onderrug." },
+    ],
+  },
+  {
+    id: "seasonal_makeup_spiegel",
+    slug: "led-makeup-spiegel",
+    name: "LED Make-up Spiegel",
+    shortDescription:
+      "Make-up spiegel met verstelbare LED verlichting. Draaibaar, oplaadbaar.",
+    description:
+      "Een must-have voor elke make-up routine. Deze LED spiegel met verstelbare helderheid en 3 kleurtemperaturen zorgt altijd voor perfecte verlichting. 360 graden draaibaar, oplaadbaar via USB en compact genoeg voor op reis.",
+    status: "active",
+    basePriceIncVat: 24.95,
+    compareAtPriceIncVat: 34.95,
+    primaryImage: "/images/products/led-makeup-spiegel.jpg",
+    galleryImages: ["/images/products/led-makeup-spiegel.jpg"],
+    brand: "PaddleForge",
+    category: "Moederdag",
+    badge: "Moederdag",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x LED make-up spiegel", "USB oplaadkabel"],
+    bulletPoints: [
+      "Verstelbare LED helderheid",
+      "3 kleurtemperaturen (warm, neutraal, koel)",
+      "360 graden draaibaar",
+      "Oplaadbaar via USB",
+    ],
+    faq: [
+      { question: "Heeft het een vergroting?", answer: "Ja, één zijde is normaal en de andere heeft 5x vergroting." },
+    ],
+  },
+
+  // ═════════════════════════════════════════════════════════════
+  // ZOMER 2026 — Outdoor & festival producten
+  // ═════════════════════════════════════════════════════════════
+  {
+    id: "seasonal_nekventilator",
+    slug: "draagbare-nekventilator",
+    name: "Draagbare Nekventilator",
+    shortDescription:
+      "USB oplaadbare nekventilator. 5 snelheden, stil, perfect voor zomer.",
+    description:
+      "Blijf koel tijdens warme zomerdagen met deze draagbare nekventilator. Hangt comfortabel om je nek en blaast een verkoelende bries. USB oplaadbaar, 5 snelheden en fluisterstil. Ideaal voor festivals, de trein, sport of een dag op het strand.",
+    status: "active",
+    basePriceIncVat: 24.95,
+    compareAtPriceIncVat: 34.95,
+    primaryImage: "/images/products/nekventilator.jpg",
+    galleryImages: ["/images/products/nekventilator.jpg"],
+    brand: "PaddleForge",
+    category: "Zomer",
+    badge: "Zomer Hit",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x nekventilator", "USB-C oplaadkabel"],
+    bulletPoints: [
+      "5 snelheidsstanden",
+      "USB-C oplaadbaar — 6 uur speeltijd",
+      "Fluisterstil ontwerp",
+      "Slechts 260 gram — de hele dag comfortabel",
+    ],
+    faq: [
+      { question: "Hoe lang gaat de batterij mee?", answer: "Op de laagste stand circa 6 uur, op de hoogste stand circa 2 uur." },
+      { question: "Is het zwaar om de hele dag te dragen?", answer: "Nee, de ventilator weegt maar 260 gram — lichter dan een telefoon." },
+    ],
+  },
+  {
+    id: "seasonal_solar_tuinverlichting",
+    slug: "solar-tuinverlichting-led",
+    name: "Solar Tuinverlichting LED Snoer",
+    shortDescription:
+      "10 meter solar LED snoerverlichting voor tuin en terras. Warm wit.",
+    description:
+      "Creëer een magische sfeer op je terras met deze solar LED snoerverlichting. 10 meter met 100 warm-witte LED lampjes die automatisch aangaan bij schemering. Geen stroom nodig — het zonnepaneel laadt overdag op. Weerbestendig voor de hele zomer buiten.",
+    status: "active",
+    basePriceIncVat: 19.95,
+    compareAtPriceIncVat: 29.95,
+    primaryImage: "/images/products/solar-tuinverlichting.jpg",
+    galleryImages: ["/images/products/solar-tuinverlichting.jpg"],
+    brand: "PaddleForge",
+    category: "Zomer",
+    badge: "Zomer Hit",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x LED snoer (10 meter, 100 LED's)", "Zonnepaneel met grondpin"],
+    bulletPoints: [
+      "10 meter lang — 100 warm-witte LED's",
+      "Solar: geen stroom nodig",
+      "Automatisch aan bij schemering",
+      "Weerbestendig (IP65)",
+    ],
+    faq: [
+      { question: "Gaan ze vanzelf aan?", answer: "Ja, de lampjes gaan automatisch aan zodra het donker wordt en uit bij daglicht." },
+      { question: "Hoe lang branden ze 's nachts?", answer: "Na een volle dag zon branden ze 8-10 uur." },
+    ],
+  },
+  {
+    id: "seasonal_draagbare_blender",
+    slug: "draagbare-smoothie-blender",
+    name: "Draagbare Smoothie Blender",
+    shortDescription:
+      "Draagbare USB blender voor smoothies onderweg. 400ml, oplaadbaar.",
+    description:
+      "Maak overal verse smoothies met deze draagbare blender. 400ml capaciteit, USB-C oplaadbaar en krachtig genoeg voor ijs, fruit en groenten. Neem hem mee naar het strand, het park of de sportschool voor een verse smoothie wanneer je maar wilt.",
+    status: "active",
+    basePriceIncVat: 29.95,
+    compareAtPriceIncVat: 39.95,
+    primaryImage: "/images/products/draagbare-blender.jpg",
+    galleryImages: ["/images/products/draagbare-blender.jpg"],
+    brand: "PaddleForge",
+    category: "Zomer",
+    badge: "Zomer Hit",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x draagbare blender", "USB-C oplaadkabel"],
+    bulletPoints: [
+      "400ml capaciteit — perfect voor één smoothie",
+      "USB-C oplaadbaar — 15+ smoothies per lading",
+      "Krachtig genoeg voor ijs en bevroren fruit",
+      "BPA-vrij en makkelijk schoon te maken",
+    ],
+    faq: [
+      { question: "Kan het ijs vermalen?", answer: "Ja, de blender kan kleine ijsblokjes en bevroren fruit zonder problemen verwerken." },
+      { question: "Lekt het in mijn tas?", answer: "Nee, het deksel sluit stevig af. Ontworpen om mee te nemen." },
+    ],
+  },
+  {
+    id: "seasonal_elektrisch_waterpistool",
+    slug: "elektrisch-waterpistool",
+    name: "Elektrisch Waterpistool",
+    shortDescription:
+      "Oplaadbaar elektrisch waterpistool. 10 meter bereik, groot reservoir.",
+    description:
+      "Het ultieme zomerspeelgoed voor kinderen én volwassenen. Dit elektrische waterpistool schiet water tot 10 meter ver met één druk op de knop — geen pompen meer nodig. Groot reservoir van 500ml en oplaadbaar via USB. De watergevechten worden nooit meer hetzelfde.",
+    status: "active",
+    basePriceIncVat: 29.95,
+    compareAtPriceIncVat: 44.95,
+    primaryImage: "/images/products/elektrisch-waterpistool.jpg",
+    galleryImages: ["/images/products/elektrisch-waterpistool.jpg"],
+    brand: "PaddleForge",
+    category: "Zomer",
+    badge: "Zomer Hit",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x elektrisch waterpistool", "USB oplaadkabel"],
+    bulletPoints: [
+      "Elektrisch — geen pompen nodig",
+      "10 meter bereik",
+      "500ml reservoir",
+      "USB oplaadbaar — 30 minuten speeltijd",
+    ],
+    faq: [
+      { question: "Vanaf welke leeftijd?", answer: "Geschikt voor kinderen vanaf 6 jaar (onder toezicht) en volwassenen." },
+      { question: "Is het waterdicht?", answer: "De motor en batterij zijn waterdicht (IPX5), maar niet onderdompelen." },
+    ],
+  },
+  {
+    id: "seasonal_camping_lamp",
+    slug: "oplaadbare-camping-lamp",
+    name: "Oplaadbare Camping Lamp",
+    shortDescription:
+      "LED camping lantaarn met 3 standen. Oplaadbaar, compact, weerbestendig.",
+    description:
+      "De perfecte metgezel voor camping, tuinfeesten en stroomuitval. Deze compacte LED lantaarn biedt 3 lichtstanden (warm, helder, SOS), is USB-C oplaadbaar en volledig weerbestendig. Hang hem op aan de ingebouwde haak of zet hem neer — overal licht waar je het nodig hebt.",
+    status: "active",
+    basePriceIncVat: 19.95,
+    compareAtPriceIncVat: 29.95,
+    primaryImage: "/images/products/camping-lamp.jpg",
+    galleryImages: ["/images/products/camping-lamp.jpg"],
+    brand: "PaddleForge",
+    category: "Zomer",
+    badge: "Zomer Hit",
+    shippingEstimateMinDays: 7,
+    shippingEstimateMaxDays: 14,
+    returnWindowDays: 14,
+    contents: ["1x LED camping lamp", "USB-C oplaadkabel", "Ophanghaak"],
+    bulletPoints: [
+      "3 lichtstanden: warm, helder, SOS",
+      "USB-C oplaadbaar — 12 uur brandtijd",
+      "Weerbestendig (IP65)",
+      "Compact en lichtgewicht (180g)",
+    ],
+    faq: [
+      { question: "Kan ik hem ophangen in de tent?", answer: "Ja, er zit een ingebouwde ophanghaak aan de onderkant." },
+      { question: "Hoe helder is hij?", answer: "Op de hoogste stand 300 lumen — genoeg om een tent of picknickplek te verlichten." },
+    ],
+  },
 ];
 
 export function getProductBySlug(slug: string): ProductData | undefined {
@@ -628,4 +1131,20 @@ export function getProductBySlug(slug: string): ProductData | undefined {
 
 export function getAllProducts(): ProductData[] {
   return products.filter((p) => p.status === "active");
+}
+
+export function getProductsByCategory(category: string): ProductData[] {
+  return products.filter((p) => p.status === "active" && p.category === category);
+}
+
+export function getKoningsdagProducts(): ProductData[] {
+  return getProductsByCategory("Koningsdag");
+}
+
+export function getMoederdagProducts(): ProductData[] {
+  return getProductsByCategory("Moederdag");
+}
+
+export function getZomerProducts(): ProductData[] {
+  return getProductsByCategory("Zomer");
 }

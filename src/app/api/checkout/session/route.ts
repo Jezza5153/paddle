@@ -45,7 +45,7 @@ export async function POST(request: Request) {
               name: product.name,
               description: product.shortDescription,
               images: [
-                `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}${product.primaryImage}`,
+                `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}${product.primaryImage}`,
               ],
             },
             unit_amount: Math.round(product.basePriceIncVat * 100),
@@ -69,8 +69,8 @@ export async function POST(request: Request) {
       metadata: {
         cart: cartMeta,
       },
-      success_url: `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/cart`,
+      success_url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/cart`,
     });
 
     return NextResponse.json({ url: session.url });

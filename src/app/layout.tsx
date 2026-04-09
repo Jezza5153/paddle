@@ -21,7 +21,13 @@ export const metadata: Metadata = {
   title: "Padel accessoires kopen in Nederland | PaddleForge",
   description:
     "Shop slimme padel accessoires en starter kits in Nederland. Veilig betalen met iDEAL | Wero, kaart, Apple Pay en Google Pay.",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "nl-NL": "/",
+    },
+  },
   openGraph: {
     title: "PaddleForge — Padel Gear",
     description:
@@ -46,6 +52,10 @@ export default function RootLayout({
   return (
     <html lang="nl" className={`${spaceGrotesk.variable} ${manrope.variable} h-full`}>
       <head>
+        <meta name="geo.region" content="NL" />
+        <meta name="geo.placename" content="Nederland" />
+        <meta name="geo.position" content="52.3676;4.9041" />
+        <meta name="ICBM" content="52.3676, 4.9041" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2XX2WMTVT" />
@@ -71,7 +81,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "PaddleForge",
-              url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
+              url: process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl",
               description:
                 "Slimme padel accessoires en starter kits in Nederland.",
               address: {
