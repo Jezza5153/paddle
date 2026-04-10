@@ -75,18 +75,18 @@ export default function CartPage() {
         {/* Header */}
         <div className="p-8 flex items-center justify-between border-b border-border/50">
           <div className="flex items-center gap-4">
-            <h2 className="font-headline text-2xl font-bold tracking-tight text-white uppercase">Je Winkelmand</h2>
-            <span className="font-label bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full text-[10px] tracking-widest font-bold">
+            <h2 className="font-headline text-2xl font-bold tracking-tight text-inverse-on-surface uppercase">Je Winkelmand</h2>
+            <span className="font-label bg-surface text-on-surface px-3 py-1 rounded-full text-[10px] tracking-widest font-bold">
               {totalItems} ITEMS
             </span>
           </div>
         </div>
-        
+
         {/* Items */}
         <div className="flex-1 overflow-y-auto p-8 space-y-10">
           {items.map((item) => (
             <div key={item.product.id} className="flex gap-6 group">
-              <div className="w-24 h-24 bg-surface-container-highest rounded-xl overflow-hidden shrink-0 relative">
+              <div className="w-24 h-24 bg-surface rounded-xl overflow-hidden shrink-0 relative">
                 <Image
                   src={item.product.primaryImage}
                   alt={item.product.name}
@@ -98,26 +98,26 @@ export default function CartPage() {
               <div className="flex-1 flex flex-col justify-between py-1">
                 <div>
                   <div className="flex justify-between items-start mb-1">
-                    <Link href={`/products/${item.product.slug}`} className="font-headline font-bold text-white leading-tight uppercase text-sm tracking-wide hover:text-primary transition-colors">
+                    <Link href={`/products/${item.product.slug}`} className="font-headline font-bold text-inverse-on-surface leading-tight uppercase text-sm tracking-wide hover:text-primary-dim transition-colors">
                       {item.product.name}
                     </Link>
-                    <span className="text-white font-headline font-bold pl-2">
+                    <span className="text-inverse-on-surface font-headline font-bold pl-2">
                       {formatPriceFromEuros(item.product.basePriceIncVat * item.quantity)}
                     </span>
                   </div>
-                  <p className="text-on-surface-variant text-xs font-body tracking-tight">
+                  <p className="text-inverse-on-surface-variant text-xs font-body tracking-tight">
                     {item.product.category}
                   </p>
                 </div>
                 <div className="flex items-center justify-between mt-4">
-                  <div className="flex items-center bg-surface-container-highest rounded-full px-3 py-1">
+                  <div className="flex items-center bg-surface rounded-full px-3 py-1">
                     <button
                       onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
                       className="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"
                     >
                       <span className="material-symbols-outlined text-lg">remove</span>
                     </button>
-                    <span className="font-label text-white w-8 text-center text-xs font-bold">
+                    <span className="font-label text-on-surface w-8 text-center text-xs font-bold">
                       {item.quantity}
                     </span>
                     <button
@@ -129,7 +129,7 @@ export default function CartPage() {
                   </div>
                   <button
                     onClick={() => removeItem(item.product.id)}
-                    className="text-on-surface-variant hover:text-error transition-colors"
+                    className="text-inverse-on-surface-variant hover:text-error transition-colors"
                   >
                     <span className="material-symbols-outlined text-xl">delete</span>
                   </button>

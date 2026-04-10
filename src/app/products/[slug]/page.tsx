@@ -160,13 +160,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 returnMethod: "https://schema.org/ReturnByMail",
               },
             },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.7",
-              reviewCount: "23",
-              bestRating: "5",
-              worstRating: "1",
-            },
           }),
         }}
       />

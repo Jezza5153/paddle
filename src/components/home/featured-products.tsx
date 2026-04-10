@@ -23,34 +23,34 @@ export function FeaturedProducts({ products }: { products: ProductData[] }) {
     <section className="py-32 bg-inverse-surface overflow-hidden" id="performance">
       <div className="max-w-screen-2xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.2, 0.8, 0.2, 1] }}
-            className="font-headline text-5xl md:text-8xl font-black text-surface leading-none"
+            className="font-headline text-5xl md:text-8xl font-black text-inverse-on-surface leading-none"
           >
             PRESTATIE<br />
             <span className="text-stroke">COLLECTIE</span>
           </motion.h2>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: [0.2, 0.8, 0.2, 1], delay: 0.3 }}
             className="hidden md:flex gap-4"
           >
-            <button className="w-14 h-14 rounded-full border border-surface/20 flex items-center justify-center text-surface hover:bg-surface hover:text-inverse-surface transition-all">
+            <button className="w-14 h-14 rounded-full border border-inverse-on-surface/20 flex items-center justify-center text-inverse-on-surface hover:bg-inverse-on-surface hover:text-on-surface transition-all">
               <span className="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
             </button>
-            <button className="w-14 h-14 rounded-full border border-surface/20 flex items-center justify-center text-surface hover:bg-surface hover:text-inverse-surface transition-all">
+            <button className="w-14 h-14 rounded-full border border-inverse-on-surface/20 flex items-center justify-center text-inverse-on-surface hover:bg-inverse-on-surface hover:text-on-surface transition-all">
               <span className="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
             </button>
           </motion.div>
         </div>
 
-        <motion.div 
+        <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
@@ -62,15 +62,15 @@ export function FeaturedProducts({ products }: { products: ProductData[] }) {
               <Link href={`/products/${product.slug}`} className="block h-full">
                 <div className="bg-[#18181b] rounded-xl p-8 group hover:bg-[#27272a] transition-colors duration-500 h-full flex flex-col cursor-pointer">
                   <div className="aspect-[3/4] mb-8 overflow-hidden rounded-lg flex-shrink-0 bg-surface">
-                    <img 
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
-                      alt={product.name} 
+                    <img
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                      alt={product.name}
                       src={product.primaryImage || '/images/placeholder.jpg'}
                     />
                   </div>
                   <div className="flex justify-between items-start mb-4 mt-auto">
                     <div>
-                      <h4 className="text-surface font-headline text-2xl font-bold line-clamp-1">{product.name}</h4>
+                      <h4 className="text-on-surface font-headline text-2xl font-bold line-clamp-1">{product.name}</h4>
                       <p className="text-on-surface-variant font-label text-xs tracking-widest mt-1 uppercase">
                         {product.badge || 'PRO SERIES'}
                       </p>

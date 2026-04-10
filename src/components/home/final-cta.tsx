@@ -32,7 +32,7 @@ export function FinalCta() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1], delay: 0.2 }}
             animate={{ boxShadow: ["0px 0px 0px 0px rgba(212, 255, 0, 0.4)", "0px 0px 0px 20px rgba(212, 255, 0, 0)", "0px 0px 0px 0px rgba(212, 255, 0, 0)"] }}
-            className="bg-inverse-surface text-surface px-12 md:px-16 py-5 md:py-6 rounded-full font-headline font-black text-xl md:text-2xl hover:bg-black transition-all hover:scale-110 active:scale-95 shadow-2xl"
+            className="bg-inverse-surface text-inverse-on-surface px-12 md:px-16 py-5 md:py-6 rounded-full font-headline font-black text-xl md:text-2xl hover:bg-surface hover:text-on-surface transition-all hover:scale-110 active:scale-95 shadow-2xl"
           >
             BEKIJK DE COLLECTIE
           </motion.button>

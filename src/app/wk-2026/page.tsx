@@ -113,26 +113,26 @@ export default function WK2026Page() {
       <section className="bg-inverse-surface py-10 px-8">
         <div className="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <span className="font-headline text-3xl font-black text-primary">500K+</span>
-            <p className="text-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
+            <span className="font-headline text-3xl font-black text-inverse-on-surface">500K+</span>
+            <p className="text-inverse-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
               Padel spelers in NL
             </p>
           </div>
           <div>
-            <span className="font-headline text-3xl font-black text-primary">#1</span>
-            <p className="text-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
+            <span className="font-headline text-3xl font-black text-inverse-on-surface">#1</span>
+            <p className="text-inverse-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
               Snelst groeiende sport
             </p>
           </div>
           <div>
-            <span className="font-headline text-3xl font-black text-primary">4</span>
-            <p className="text-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
+            <span className="font-headline text-3xl font-black text-inverse-on-surface">4</span>
+            <p className="text-inverse-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
               WK Events in 2026
             </p>
           </div>
           <div>
-            <span className="font-headline text-3xl font-black text-primary">€9</span>
-            <p className="text-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
+            <span className="font-headline text-3xl font-black text-inverse-on-surface">€9</span>
+            <p className="text-inverse-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
               Starten vanaf
             </p>
           </div>
@@ -207,14 +207,14 @@ export default function WK2026Page() {
                 key={event.name}
                 className="bg-inverse-surface border border-border/30 rounded-xl p-8 hover:border-primary/50 transition-colors group"
               >
-                <span className="material-symbols-outlined text-3xl text-primary mb-4 block group-hover:scale-110 transition-transform">
+                <span className="material-symbols-outlined text-3xl text-primary-dim mb-4 block group-hover:scale-110 transition-transform">
                   {event.icon}
                 </span>
-                <h3 className="font-headline font-bold text-lg uppercase tracking-tight text-white mb-2">
+                <h3 className="font-headline font-bold text-lg uppercase tracking-tight text-inverse-on-surface mb-2">
                   {event.name}
                 </h3>
-                <p className="text-on-surface-variant text-sm mb-1">{event.date}</p>
-                <p className="text-primary text-xs font-label tracking-widest uppercase">
+                <p className="text-inverse-on-surface-variant text-sm mb-1">{event.date}</p>
+                <p className="text-primary-dim text-xs font-label tracking-widest uppercase">
                   {event.location}
                 </p>
               </div>
@@ -307,15 +307,15 @@ export default function WK2026Page() {
               },
             ].map((faq, i) => (
               <details key={i} className="group bg-inverse-surface rounded-xl border border-border/30">
-                <summary className="flex justify-between items-center cursor-pointer p-6 hover:text-primary transition-colors list-none [&::-webkit-details-marker]:hidden">
-                  <span className="font-headline font-bold text-sm uppercase tracking-wide text-white pr-4">
+                <summary className="flex justify-between items-center cursor-pointer p-6 hover:text-primary-dim transition-colors list-none [&::-webkit-details-marker]:hidden">
+                  <span className="font-headline font-bold text-sm uppercase tracking-wide text-inverse-on-surface pr-4">
                     {faq.q}
                   </span>
-                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform shrink-0 text-on-surface-variant">
+                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform shrink-0 text-inverse-on-surface-variant">
                     expand_more
                   </span>
                 </summary>
-                <div className="px-6 pb-6 text-on-surface-variant leading-relaxed text-sm">
+                <div className="px-6 pb-6 text-inverse-on-surface-variant leading-relaxed text-sm">
                   {faq.a}
                 </div>
               </details>

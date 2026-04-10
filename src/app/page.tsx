@@ -39,26 +39,26 @@ function StatsBar() {
     <section className="bg-inverse-surface py-10 px-8 border-y border-outline-variant/10">
       <div className="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
-          <span className="font-headline text-3xl font-black text-primary">876K+</span>
-          <p className="text-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
+          <span className="font-headline text-3xl font-black text-inverse-on-surface">876K+</span>
+          <p className="text-inverse-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
             Padel spelers in NL
           </p>
         </div>
         <div>
-          <span className="font-headline text-3xl font-black text-primary">+40%</span>
-          <p className="text-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
+          <span className="font-headline text-3xl font-black text-inverse-on-surface">+40%</span>
+          <p className="text-inverse-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
             Groei per jaar
           </p>
         </div>
         <div>
-          <span className="font-headline text-3xl font-black text-primary">€9,95</span>
-          <p className="text-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
+          <span className="font-headline text-3xl font-black text-inverse-on-surface">€9,95</span>
+          <p className="text-inverse-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
             Starten vanaf
           </p>
         </div>
         <div>
-          <span className="font-headline text-3xl font-black text-primary">14 dagen</span>
-          <p className="text-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
+          <span className="font-headline text-3xl font-black text-inverse-on-surface">14 dagen</span>
+          <p className="text-inverse-on-surface-variant text-xs font-label tracking-widest uppercase mt-1">
             Retourgarantie
           </p>
         </div>
@@ -134,14 +134,14 @@ function HomeFaq() {
             {faqs.map((faq, i) => (
               <details key={i} className="group bg-inverse-surface rounded-xl border border-border/30">
                 <summary className="flex justify-between items-center cursor-pointer p-6 hover:text-primary transition-colors list-none [&::-webkit-details-marker]:hidden">
-                  <span className="font-headline font-bold text-sm uppercase tracking-wide text-white pr-4">
+                  <span className="font-headline font-bold text-sm uppercase tracking-wide text-inverse-on-surface pr-4">
                     {faq.q}
                   </span>
-                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform shrink-0 text-on-surface-variant">
+                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform shrink-0 text-inverse-on-surface-variant">
                     expand_more
                   </span>
                 </summary>
-                <div className="px-6 pb-6 text-on-surface-variant leading-relaxed text-sm">
+                <div className="px-6 pb-6 text-inverse-on-surface-variant leading-relaxed text-sm">
                   {faq.a}
                 </div>
               </details>

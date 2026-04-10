@@ -167,13 +167,16 @@ export default function KoningsdagPage() {
           </h2>
           <div className="space-y-4 text-on-surface-variant leading-relaxed text-sm">
             <p>
-              Koningsdag is de nationale feestdag van Nederland, gevierd op <strong>27 april</strong> ter ere van de verjaardag van Koning Willem-Alexander. Volgens het CBS vieren jaarlijks meer dan <strong>8,8 miljoen Nederlanders</strong> actief Koningsdag, wat het de drukst bezochte feestdag van het land maakt.
+              Koningsdag is de nationale feestdag van Nederland, gevierd op <strong>27 april</strong> ter ere van de verjaardag van Koning Willem-Alexander. Volgens onderzoek van het Centraal Bureau voor de Statistiek (CBS) en het Koninklijk Huis vieren jaarlijks meer dan <strong>8,8 miljoen Nederlanders</strong> actief Koningsdag, wat het de drukst bezochte feestdag van het land maakt.
             </p>
             <p>
-              De traditie van de <strong>vrijmarkt</strong> trekt elk jaar miljoenen bezoekers, met Amsterdam, Utrecht en Rotterdam als populairste bestemmingen. In 2026 vindt het officiële Koninklijke bezoek plaats in <strong>Dokkum, Friesland</strong>.
+              De traditie van de <strong>vrijmarkt</strong> — waarbij iedereen vrij mag handelen zonder vergunning — trekt elk jaar miljoenen bezoekers, met Amsterdam, Utrecht en Rotterdam als populairste bestemmingen. In 2026 vindt het officiële Koninklijke bezoek plaats in <strong>Dokkum, Friesland</strong>, zoals aangekondigd door de Rijksvoorlichtingsdienst.
             </p>
             <p>
-              De kleur <strong>oranje</strong> is onlosmakelijk verbonden met Koningsdag. Van oranje T-shirts en feestbrillen tot schmink en vlaggen — vrijwel iedereen kleedt zich in de nationale kleur. Bij PaddleForge vind je alle oranje accessoires die je nodig hebt voor een geslaagde Koningsdag.
+              De kleur <strong>oranje</strong> is onlosmakelijk verbonden met Koningsdag en verwijst naar het Huis van Oranje-Nassau. Van oranje T-shirts en feestbrillen tot schmink en vlaggen — vrijwel iedereen kleedt zich in de nationale kleur. Bij PaddleForge vind je alle oranje accessoires die je nodig hebt voor een geslaagde Koningsdag.
+            </p>
+            <p className="text-xs italic text-on-surface-variant/70 pt-4 border-t border-outline-variant/20">
+              Bronnen: Koninklijk Huis (koninklijkhuis.nl), Centraal Bureau voor de Statistiek, Rijksoverheid.
             </p>
           </div>
         </div>
@@ -300,6 +303,39 @@ export default function KoningsdagPage() {
                 },
               },
             ],
+          }),
+        }}
+      />
+
+      {/* Event Schema for Koningsdag 2026 */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            name: "Koningsdag 2026",
+            startDate: "2026-04-27",
+            endDate: "2026-04-27",
+            eventStatus: "https://schema.org/EventScheduled",
+            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+            location: {
+              "@type": "Place",
+              name: "Dokkum",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Dokkum",
+                addressRegion: "Friesland",
+                addressCountry: "NL",
+              },
+            },
+            description:
+              "Koningsdag 2026 — de nationale feestdag van Nederland ter ere van Koning Willem-Alexander. Officieel Koninklijk bezoek aan Dokkum, Friesland.",
+            organizer: {
+              "@type": "Organization",
+              name: "Het Koninklijk Huis",
+              url: "https://www.koninklijkhuis.nl",
+            },
           }),
         }}
       />

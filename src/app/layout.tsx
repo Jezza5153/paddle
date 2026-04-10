@@ -82,21 +82,69 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
+              "@type": "OnlineStore",
               name: "PaddleForge",
+              alternateName: "PaddleForge.nl",
               url: process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl",
+              logo: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/images/products/carbon-paddle-set.jpg`,
+              email: "info@paddleforge.nl",
               description:
-                "Nederlandse webshop voor padel accessoires, Koningsdag artikelen, moederdag cadeaus en zomerproducten. Veilig betalen met iDEAL.",
+                "Nederlandse webshop voor padel uitrusting, Koningsdag accessoires, Moederdag cadeaus en seizoensproducten. Veilig betalen met iDEAL.",
+              slogan: "Kinetic Precision — Padel voor heel Nederland",
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "NL",
+                addressRegion: "Nederland",
               },
               areaServed: {
                 "@type": "Country",
                 name: "Netherlands",
               },
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "customer service",
+                email: "info@paddleforge.nl",
+                availableLanguage: ["Dutch", "English"],
+                areaServed: "NL",
+              },
               paymentAccepted: ["iDEAL", "Visa", "Mastercard", "Apple Pay", "Google Pay"],
               currenciesAccepted: "EUR",
+              knowsAbout: [
+                "Padel rackets",
+                "Padel accessoires",
+                "Carbon padel rackets",
+                "Padel starter sets",
+                "Koningsdag accessoires",
+                "Moederdag cadeaus",
+                "Nederlandse seizoensproducten",
+                "WK Padel 2026",
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "PaddleForge Collectie",
+                itemListElement: [
+                  {
+                    "@type": "OfferCatalog",
+                    name: "Padel & Sport",
+                    url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/shop`,
+                  },
+                  {
+                    "@type": "OfferCatalog",
+                    name: "Koningsdag 2026",
+                    url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/koningsdag`,
+                  },
+                  {
+                    "@type": "OfferCatalog",
+                    name: "Moederdag",
+                    url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/moederdag`,
+                  },
+                  {
+                    "@type": "OfferCatalog",
+                    name: "WK 2026",
+                    url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://www.paddleforge.nl"}/wk-2026`,
+                  },
+                ],
+              },
             }),
           }}
         />

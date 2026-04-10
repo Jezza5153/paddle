@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 
 export default function SuccessPage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden bg-inverse-surface text-surface pt-20 pb-20">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden bg-surface text-on-surface pt-20 pb-20">
       {/* Background Aesthetic Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(209,252,0,0.1)_0%,rgba(14,14,14,0)_70%)] pointer-events-none"></div>
       <div className="absolute -top-[10%] -left-[5%] opacity-5 pointer-events-none">
-        <span className="font-headline text-[25vw] font-black italic tracking-tighter leading-none select-none text-surface">PADDLEFORGE</span>
+        <span className="font-headline text-[25vw] font-black italic tracking-tighter leading-none select-none text-on-surface">PADDLEFORGE</span>
       </div>
 
       {/* Success Module */}

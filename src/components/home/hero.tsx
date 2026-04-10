@@ -15,12 +15,12 @@ export function Hero() {
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
   return (
-    <section 
+    <section
       ref={ref}
-      className="relative h-screen flex items-center justify-center overflow-hidden bg-inverse-surface"
+      className="relative h-screen flex items-center justify-center overflow-hidden bg-surface"
     >
-      <motion.div 
-        className="absolute inset-0 opacity-40"
+      <motion.div
+        className="absolute inset-0 opacity-50"
         style={{ y: backgroundY }}
       >
         <img
@@ -29,18 +29,19 @@ export function Hero() {
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZCELGR_exMyE6bPnjFhnJv3fsnLIUHm23HKWOAwHoGV5-58f5RNQqj4S9qMzgP-MU3FlPLQA7cmHWxQWn14_6tdUF64NaKCQ4IvoGcaYBu4AvtZAG6ALxhE8IxNVQomY1LsCV8hv2fm4fC999QXzoLWjDJcpylnWNI9mR-UzbuOY5lxSh2glJUitEqoKSJpaixDJtFswhjmODGhY-41apqjc5GjugbF3ug4uMeMQK_EaL6CPJN6U15SeNUIXI9ed4Q0R_HyrPV0A"
         />
       </motion.div>
+      <div className="absolute inset-0 bg-gradient-to-b from-surface/40 via-transparent to-surface" />
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, ease: [0.2, 0.8, 0.2, 1] }}
         className="relative z-10 text-center px-6"
       >
-        <h1 className="font-headline text-8xl md:text-[12rem] font-black text-surface leading-[0.85] tracking-tighter mb-8">
+        <h1 className="font-headline text-8xl md:text-[12rem] font-black text-on-surface leading-[0.85] tracking-tighter mb-8">
           KINETIC<br />
-          <span className="text-primary-container italic">PRECISION</span>
+          <span className="text-primary italic">PRECISION</span>
         </h1>
-        <p className="font-label text-surface/60 tracking-[0.2em] text-sm md:text-base uppercase mb-12">
+        <p className="font-label text-on-surface-variant tracking-[0.2em] text-sm md:text-base uppercase mb-12">
           Het Hoogtepunt van Competitieve Padel Engineering
         </p>
         <div className="flex flex-col md:flex-row gap-6 justify-center">

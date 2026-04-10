@@ -47,7 +47,7 @@ export default function MoederdagPage() {
       <section className="pt-32 pb-20 px-8 max-w-screen-xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-pink-500/15 text-pink-400 px-4 py-2 rounded-full text-xs font-label tracking-widest uppercase mb-8">
           <span className="material-symbols-outlined text-sm">favorite</span>
-          11 MEI 2026 · MOEDERDAG
+          10 MEI 2026 · MOEDERDAG
         </div>
 
         <h1 className="font-headline text-5xl md:text-7xl font-black tracking-tighter leading-none uppercase mb-6 text-on-surface">
@@ -156,13 +156,16 @@ export default function MoederdagPage() {
           </h2>
           <div className="space-y-4 text-on-surface-variant leading-relaxed text-sm">
             <p>
-              Moederdag wordt in Nederland gevierd op de <strong>tweede zondag van mei</strong> — in 2026 valt dat op <strong>11 mei</strong>. Volgens onderzoek van Thuiswinkel.org besteden Nederlanders gemiddeld <strong>€25-€35</strong> aan een moederdag cadeau, waarbij online aankopen elk jaar groeien.
+              Moederdag wordt in Nederland gevierd op de <strong>tweede zondag van mei</strong> — in 2026 valt dat op <strong>zondag 10 mei</strong>. Volgens marktonderzoek van Thuiswinkel.org en GfK besteden Nederlanders gemiddeld <strong>€25-€35</strong> aan een moederdag cadeau, waarbij online aankopen elk jaar met dubbele cijfers groeien.
             </p>
             <p>
               De populairste cadeau-categorieën zijn <strong>sieraden, wellness en beauty, bloemen en persoonlijke geschenken</strong>. Steeds meer Nederlanders kiezen voor een cadeau dat langer meegaat dan verse bloemen — denk aan een eeuwige roos, een jade roller set of een persoonlijke ketting.
             </p>
             <p>
               Bij PaddleForge vind je unieke moederdag cadeaus die je nergens anders vindt. Van een ketting die &quot;ik hou van je&quot; in 100 talen projecteert tot een luxe nekmassage apparaat — allemaal mooi verpakt en cadeau-klaar geleverd.
+            </p>
+            <p className="text-xs italic text-on-surface-variant/70 pt-4 border-t border-outline-variant/20">
+              Bronnen: Thuiswinkel.org Markt Monitor, GfK Consumer Panel, Centraal Bureau voor de Statistiek.
             </p>
           </div>
         </div>
@@ -201,7 +204,7 @@ export default function MoederdagPage() {
             Maak Mama <span className="text-pink-400">Blij.</span>
           </h2>
           <p className="text-on-surface-variant text-lg mb-10">
-            Moederdag is 11 mei 2026. Bestel op tijd zodat het cadeau er is.
+            Moederdag is 10 mei 2026. Bestel op tijd zodat het cadeau er is.
             Veilig betalen met iDEAL.
           </p>
           <a
@@ -227,7 +230,7 @@ export default function MoederdagPage() {
                 name: "Wanneer is Moederdag 2026?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Moederdag 2026 valt op zondag 11 mei.",
+                  text: "Moederdag 2026 valt op zondag 10 mei. In Nederland wordt Moederdag altijd gevierd op de tweede zondag van mei.",
                 },
               },
               {
@@ -243,10 +246,33 @@ export default function MoederdagPage() {
                 name: "Kan ik nog op tijd bestellen voor Moederdag?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Bestel uiterlijk 2 weken voor Moederdag (voor 27 april) om zeker te zijn van levering. Levertijd is 7-14 werkdagen.",
+                  text: "Bestel uiterlijk 2 weken voor Moederdag (voor 26 april) om zeker te zijn van levering. Levertijd is 7-14 werkdagen.",
                 },
               },
             ],
+          }),
+        }}
+      />
+
+      {/* Event Schema for Moederdag 2026 */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            name: "Moederdag 2026",
+            startDate: "2026-05-10",
+            endDate: "2026-05-10",
+            eventStatus: "https://schema.org/EventScheduled",
+            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+            location: {
+              "@type": "Place",
+              name: "Nederland",
+              address: { "@type": "PostalAddress", addressCountry: "NL" },
+            },
+            description:
+              "Moederdag 2026 — gevierd op de tweede zondag van mei in Nederland. Tijd om mama in het zonnetje te zetten.",
           }),
         }}
       />
